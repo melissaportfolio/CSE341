@@ -1,0 +1,9 @@
+body, html {
+    background-image: url(images/nasa_unsplash.jpg);
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: cornflowerblue;
+    padding: 60px;
+}
