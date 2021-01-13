@@ -1,0 +1,32 @@
+.div-1 {
+    font-size: 40px;
+    font-weight: 400;
+    transition: font-weight .4s ease-in-out;
+    padding: 20px;
+}
+
+.div-2 {
+    font-size: 40px;
+    font-weight: 400;
+    transition: font-weight .4s ease-in-out;
+    padding: 20px;
+}
+
+.div-3 {
+    font-size: 40px;
+    font-weight: 400;
+    transition: font-weight .4s ease-in-out;
+    padding: 20px;
+}
+
+.div-1:hover {
+    font-weight: bold;
+}
+
+.div-2:hover {
+    font-weight: bold;
+}
+
+.div-3:hover {
+    font-weight: bold;
+}
