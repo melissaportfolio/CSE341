@@ -12,9 +12,7 @@
 <body>
     <h1>Melissa Hall</h1>
     <nav>
-        <ul>
-            <li>Assignments Coming Soon</li>
-        </ul>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/nav.php'; ?>
     </nav>
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
