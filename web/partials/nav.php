@@ -1,4 +1,4 @@
 <ul>  
-<li><a href="#">Home</a></li>
-<li><a href="#">Assignments Coming Soon</a></li>
+<li><a href="/web/home.php">Home</a></li>
+<li><a href="/web/assignments.php">Assignments</a></li>
 </ul>
