@@ -13,7 +13,7 @@
         </ul>
     </nav>
     <footer>
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php.php'; ?>
+        <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
     </footer>
 </body>
 </html>
