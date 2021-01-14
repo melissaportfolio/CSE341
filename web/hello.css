@@ -1,0 +1,22 @@
+/*
+font-family: 'Cinzel', serif;
+font-family: 'Courgette', cursive;
+*/
+
+body, html {
+    /*Image from Unsplash - free to use*/
+    background-image: url(images/nasa_unsplash.jpg);
+}
+h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 40px;
+    color: cornflowerblue;
+    padding: 60px;
+    animation-name: heading;
+    animation-duration: 4s;
+}
+
+@keyframes heading {
+    from {color: cornflowerblue;}
+    to {color: goldenrod;}
+  }
