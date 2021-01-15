@@ -26,7 +26,8 @@ h1 {
 figure img {
     width: 500px;
     align-items: center;
-    padding: 20px
+    padding: 20px;
+    border-radius: 30%;
 }
 
 figure {
