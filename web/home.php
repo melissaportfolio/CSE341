@@ -20,7 +20,7 @@
 
 <body>
     <h1>Melissa Hall</h1>
-    <nav class="navbar navbar-default">
+    <nav>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/nav.php'; ?>
     </nav>
     <div>
