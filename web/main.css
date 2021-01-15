@@ -36,13 +36,27 @@ figure {
     font-size: 30px;
     font-family: 'Homemade Apple', cursive;
     color: #0b2753;
+    animation-name: quote;
+    animation-duration: 4s;
 }
 
 .fig-author {
     font-size: 15px;
     font-family: 'Homemade Apple', cursive;
     color: #0b2753;
+    animation-name: author;
+    animation-duration: 4s;
 }
+
+@keyframes quote {
+from {color:#0b2753;}
+to {color: #e1e8f8;}
+}
+
+@keyframes author {
+    from {color:#0b2753;}
+    to {color: #e1e8f8;}
+    }
 
 .footer-text {
     font-family: 'Roboto', sans-serif;
@@ -50,7 +64,10 @@ figure {
     text-align: center;
     color: #0b2753;
 }
-
+.nav {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 nav ul {
     overflow: hidden;
     margin: 0;
