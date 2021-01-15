@@ -13,6 +13,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 h1 {
     font-family: 'Homemade Apple', cursive;
     text-align: center;
@@ -26,6 +27,7 @@ figure img {
     align-items: center;
     padding: 20px
 }
+
 figure {
     text-align: center;
 }
@@ -35,6 +37,7 @@ figure {
     font-family: 'Homemade Apple', cursive;
     color: #0b2753;
 }
+
 .fig-author {
     font-size: 15px;
     font-family: 'Homemade Apple', cursive;
@@ -48,22 +51,28 @@ figure {
     color: #0b2753;
 }
 
-ul {
-    list-style-type: none;
+nav ul {
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
+    list-style: none;
+}
+
+nav ul li {
     float: left;
-  }
-  
-  li a {
+}
+
+nav ul li a {
     display: block;
-    padding: 8px;
-    background-color: #0b2753;
+    padding: 10px;
+    background-color: #325DA1;
     color: #e1e8f8;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
-  }
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #e1e8f8;
+    color: #24294A;
+}
