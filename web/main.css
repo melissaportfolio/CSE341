@@ -51,14 +51,24 @@ figure {
 }
 
 @keyframes quote {
-from {color:#0b2753;}
-to {color: #e1e8f8;}
+    from {
+        color: #0b2753;
+    }
+
+    to {
+        color: #e1e8f8;
+    }
 }
 
 @keyframes author {
-    from {color:#0b2753;}
-    to {color: #e1e8f8;}
+    from {
+        color: #0b2753;
     }
+
+    to {
+        color: #e1e8f8;
+    }
+}
 
 .footer-text {
     font-family: 'Roboto', sans-serif;
@@ -92,6 +102,7 @@ to {color: #e1e8f8;}
     background-color: #e1e8f8;
     color: #24294A;
 }
+
 /*
 .home-div {
     color:#24294A;
@@ -100,7 +111,7 @@ to {color: #e1e8f8;}
 }
 */
 #purpose0 {
-    color:#24294A;
+    color: #24294A;
     font-family: 'Homemade Apple', cursive;
     font-size: 30px;
     animation-name: p0;
@@ -109,7 +120,7 @@ to {color: #e1e8f8;}
 }
 
 #purpose1 {
-    color:#24294A;
+    color: #24294A;
     font-family: 'Homemade Apple', cursive;
     font-size: 30px;
     animation-name: p1;
@@ -118,7 +129,7 @@ to {color: #e1e8f8;}
 }
 
 #purpose2 {
-    color:#24294A;
+    color: #24294A;
     font-family: 'Homemade Apple', cursive;
     font-size: 30px;
     animation-name: p2;
@@ -127,7 +138,7 @@ to {color: #e1e8f8;}
 }
 
 #purpose3 {
-    color:#24294A;
+    color: #24294A;
     font-family: 'Homemade Apple', cursive;
     font-size: 30px;
     animation-name: p3;
@@ -136,21 +147,50 @@ to {color: #e1e8f8;}
 }
 
 @keyframes p0 {
-    from {font-size: 15px;}
-    to {font-size: 30px;}
+    from {
+        font-size: 15px;
     }
 
-    @keyframes p1 {
-        from {color:#0b2753;}
-        to {color: #e1e8f8;}
-        }
+    to {
+        font-size: 30px;
+    }
+}
 
-        @keyframes p2 {
-            from {color:#0b2753;}
-            to {color: #e1e8f8;}
-            }
+@keyframes p1 {
+    from {
+        color: #0b2753;
+    }
 
-            @keyframes p3 {
-                from {color:#0b2753;}
-                to {color: #e1e8f8;}
-                }
+    to {
+        color: #e1e8f8;
+    }
+}
+
+@keyframes p2 {
+    from {
+        color: #0b2753;
+    }
+
+    to {
+        color: #e1e8f8;
+    }
+}
+
+@keyframes p3 {
+    from {
+        color: #0b2753;
+    }
+
+    to {
+        color: #e1e8f8;
+    }
+}
+
+.link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #0b2753;
+}
+.link:hover {
+    color: #e1e8f8;
+}
