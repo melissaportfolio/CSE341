@@ -23,10 +23,9 @@
     <div>
         <figure>
             <figcaption>
-                <img src="images/NeboLoop.JPG" alt="image of mountain path">
                 <p class="fig-quote">Nature does not hurry, yet everything is accomplished.</p>
                 <p class="fig-author">Lao Tzu</p>
-
+                <img src="images/NeboLoop.JPG" alt="image of mountain path">
             </figcaption>
         </figure>
     </div>
