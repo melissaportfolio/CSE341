@@ -17,7 +17,7 @@
 
 <body>
     <h1>Melissa Hall</h1>
-    <nav>
+    <nav id="nav">
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/nav.php'; ?>
     </nav>
     <div>
@@ -43,13 +43,13 @@
         <div class="row">
             <div class="col-sm div-1">
                 <div class="home-div">
-                    <p id="purpose1">Learn</p>
+                    <p id="purpose1">To learn</p>
                 </div>
                 <div class="home-div">
-                    <p id="purpose2">Grow</p>
+                    <p id="purpose2">To grow</p>
                 </div>
                 <div class="home-div">
-                    <p id="purpose3">Explore</p>
+                    <p id="purpose3">To explore</p>
                 </div>
             </div>
         </div>

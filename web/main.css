@@ -107,6 +107,7 @@ nav ul li a:hover {
     font-size: 30px;
     animation-name: p0;
     animation-duration: 4s;
+    text-align: center;
 }
 
 #purpose1 {
@@ -115,6 +116,7 @@ nav ul li a:hover {
     font-size: 30px;
     animation-name: p1;
     animation-duration: 6s;
+    text-align: center;
 }
 
 #purpose2 {
@@ -123,6 +125,7 @@ nav ul li a:hover {
     font-size: 30px;
     animation-name: p2;
     animation-duration: 8s;
+    text-align: center;
 }
 
 #purpose3 {
@@ -131,10 +134,11 @@ nav ul li a:hover {
     font-size: 30px;
     animation-name: p3;
     animation-duration: 10s;
+    text-align: center;
 }
 
 @keyframes p0 {
-    from {font-size: 1px;}
+    from {font-size: 15px;}
     to {font-size: 30px;}
     }
 
