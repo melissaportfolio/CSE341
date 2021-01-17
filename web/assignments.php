@@ -17,7 +17,7 @@
 
 <body>
     <h1>Melissa Hall</h1>
-    <nav class="navbar navbar-default">
+    <nav id="nav"">
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/nav.php'; ?>
     </nav>
     <h1>Coming Soon</h1>
