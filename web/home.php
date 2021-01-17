@@ -30,24 +30,29 @@
             </figcaption>
         </figure>
     </div>
-    <div class="container">
+    <div class="container home-div">
         <div class="row">
-          <div class="col-sm div-1">
-            <p>What is my purpose?</p>
+            <div class="col-sm div-1">
+                <p id="purpose0">What is my purpose?</p>
 
-          </div>
+            </div>
         </div>
-      </div>
-      <button id="purposeButton" class="btn btn-primary">Click to find out</button>
+    </div>
 
-    <div>
-        <p id="purpose1">Learn</p>
-    </div>
-    <div>
-    <p id="purpose2">Grow</p>
-    </div>
-    <div>
-    <p id="purpose3">Explore</p>
+    <div class="container home-div">
+        <div class="row">
+            <div class="col-sm div-1">
+                <div class="home-div">
+                    <p id="purpose1">Learn</p>
+                </div>
+                <div class="home-div">
+                    <p id="purpose2">Grow</p>
+                </div>
+                <div class="home-div">
+                    <p id="purpose3">Explore</p>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>

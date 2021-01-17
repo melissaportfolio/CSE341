@@ -92,10 +92,61 @@ nav ul li a:hover {
     background-color: #e1e8f8;
     color: #24294A;
 }
-
-.home-divs {
-    color:#e1e8f8;
-    background-color: #325DA1;
+/*
+.home-div {
+    color:#24294A;
     font-family: 'Homemade Apple', cursive;
     font-size: 30px;
 }
+*/
+#purpose0 {
+    color:#24294A;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    animation-name: p0;
+    animation-duration: 4s;
+}
+
+#purpose1 {
+    color:#24294A;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    animation-name: p1;
+    animation-duration: 6s;
+}
+
+#purpose2 {
+    color:#24294A;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    animation-name: p2;
+    animation-duration: 8s;
+}
+
+#purpose3 {
+    color:#24294A;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+    animation-name: p3;
+    animation-duration: 10s;
+}
+
+@keyframes p0 {
+    from {font-size: 1px;}
+    to {font-size: 30px;}
+    }
+
+    @keyframes p1 {
+        from {color:#0b2753;}
+        to {color: #e1e8f8;}
+        }
+
+        @keyframes p2 {
+            from {color:#0b2753;}
+            to {color: #e1e8f8;}
+            }
+
+            @keyframes p3 {
+                from {color:#0b2753;}
+                to {color: #e1e8f8;}
+                }
