@@ -190,6 +190,7 @@ figure {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #0b2753;
+    margin-left: 20px;
 }
 .link:hover {
     color: #e1e8f8;

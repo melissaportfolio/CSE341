@@ -20,6 +20,7 @@
     <nav id="nav"">
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/nav.php'; ?>
     </nav>
+    <br><br><br>
     <h1>More Coming Soon</h1>
     <a class="link" href="/week2/week2.html">Week 2 Activity</a>
     <footer>
