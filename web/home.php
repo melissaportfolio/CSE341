@@ -33,6 +33,11 @@
             </figcaption>
         </figure>
     </div>
+    <div class="home-divs">
+        <p>Learn</p>
+        <p>Grow</p>
+        <p>Explore</p>
+    </div>
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
     </footer>
