@@ -66,31 +66,29 @@ to {color: #e1e8f8;}
     text-align: center;
     color: #0b2753;
 }
-#nav a {
-    padding: 20px;
-}
-nav ul {
+
+#nav ul {
     overflow: hidden;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav ul li {
+#nav ul li {
     float: left;
 }
 
-nav ul li a {
+#nav ul li a {
     display: block;
-
     background-color: #325DA1;
     color: #e1e8f8;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    padding: 20px;
 }
 
-nav ul li a:hover {
+#nav ul li a:hover {
     background-color: #e1e8f8;
     color: #24294A;
 }
