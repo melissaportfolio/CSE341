@@ -30,9 +30,9 @@
             </figcaption>
         </figure>
     </div>
-    <div class="container home-divs">
+    <div class="container">
         <div class="row">
-          <div id="div-1" class="col-sm div-1">
+          <div class="col-sm div-1">
             <p>What is my purpose?</p>
             <button class="purposeButton btn btn-primary">Click to find out</button>
           </div>
@@ -40,10 +40,14 @@
       </div>
 
 
-    <div class="home-divs">
-        <p id="purpose1">Learn</p>
-        <p id="purpose2">Grow</p>
-        <p id="purpose3">Explore</p>
+    <div id="purpose1">
+        <p>Learn</p>
+    </div>
+    <div id="purpose2">
+    <p>Grow</p>
+    </div>
+    <div id="purpose3">
+    <p>Explore</p>
     </div>
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
