@@ -12,10 +12,7 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -33,14 +30,29 @@
             </figcaption>
         </figure>
     </div>
+    <div class="container home-divs">
+        <div class="row">
+          <div id="div-1" class="col-sm div-1">
+            <p>What is my purpose?</p>
+            <button class="purposeButton btn btn-primary">Click to find out</button>
+          </div>
+        </div>
+      </div>
+
+
     <div class="home-divs">
-        <p>Learn</p>
-        <p>Grow</p>
-        <p>Explore</p>
+        <p id="purpose1">Learn</p>
+        <p id="purpose2">Grow</p>
+        <p id="purpose3">Explore</p>
     </div>
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
     </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
