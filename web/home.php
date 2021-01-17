@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <button class="purposeButton btn btn-primary">Click to find out</button>
+      <button id="purposeButton" class="btn btn-primary">Click to find out</button>
 
     <div>
         <p id="purpose1">Learn</p>
