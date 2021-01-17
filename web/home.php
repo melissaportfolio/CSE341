@@ -20,6 +20,7 @@
     <nav id="nav">
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/nav.php'; ?>
     </nav>
+    <br><br><br>
     <div>
         <figure>
             <figcaption>
