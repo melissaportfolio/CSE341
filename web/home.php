@@ -34,20 +34,20 @@
         <div class="row">
           <div class="col-sm div-1">
             <p>What is my purpose?</p>
-            <button class="purposeButton btn btn-primary">Click to find out</button>
+
           </div>
         </div>
       </div>
+      <button class="purposeButton btn btn-primary">Click to find out</button>
 
-
-    <div id="purpose1">
-        <p>Learn</p>
+    <div>
+        <p id="purpose1">Learn</p>
     </div>
-    <div id="purpose2">
-    <p>Grow</p>
+    <div>
+    <p id="purpose2">Grow</p>
     </div>
-    <div id="purpose3">
-    <p>Explore</p>
+    <div>
+    <p id="purpose3">Explore</p>
     </div>
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
