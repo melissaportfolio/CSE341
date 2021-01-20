@@ -23,19 +23,19 @@ foreach ($majors as $key => $value) {
 <input type="radio" name="major" value="ComputerInformationTechnology">Computer Information Technology
 <input type="radio" name="major" value="ComputerEngineering">Computer Engineering-->
 Comments: <textarea name="comment" rows="5" cols="50"></textarea><br>
-Continents: <input type="checkbox" id="na" name="continent1" value="North America">
+Continents: <input type="checkbox" id="continent1" name="continent1" value="North America">
 <label for="continent1">North America</label><br>
-Continents: <input type="checkbox" id="sa" name="continent2" value="South America">
+Continents: <input type="checkbox" id="continent2" name="continent2" value="South America">
 <label for="continent2">South America</label><br>
-Continents: <input type="checkbox" id="eu" name="continent3" value="Europe">
+Continents: <input type="checkbox" id="continent3" name="continent3" value="Europe">
 <label for="continent3">Europe</label><br>
-Continents: <input type="checkbox" id="as" name="continent4" value="Asia">
+Continents: <input type="checkbox" id="continent4" name="continent4" value="Asia">
 <label for="continent4">Asia</label><br>
-Continents: <input type="checkbox" id="au" name="continent5" value="Australia">
+Continents: <input type="checkbox" id="continent5" name="continent5" value="Australia">
 <label for="continent5">Australia</label><br>
-Continents: <input type="checkbox" id="af" name="continent6" value="Africa">
+Continents: <input type="checkbox" id="continent6" name="continent6" value="Africa">
 <label for="continent6">Africa</label><br>
-Continents: <input type="checkbox" id="an" name="continent7" value="Antarctica">
+Continents: <input type="checkbox" id="continent7" name="continent7" value="Antarctica">
 <label for="continent7">Antarctica</label><br>
 
 <input type="submit" name="submit" value="Submit">
