@@ -11,26 +11,26 @@
     Your major is <?php echo $_POST["major"];?>
     Your comment is <?php echo $_POST["comment"];?>
 
-    Your visited continents are <?php if (isset($_POST["na"])){
-        echo $_POST["na"];
+    Your visited continents are <?php if (isset($_POST["continent1"])){
+        echo $_POST["continent1"];
     }?><br>
-    <?php if (isset($_POST["sa"])){
-        echo $_POST["sa"];
+    <?php if (isset($_POST["continent2"])){
+        echo $_POST["continent2"];
     }?><br>
-    <?php if (isset($_POST["eu"])){
-        echo $_POST["eu"];
+    <?php if (isset($_POST["continent3"])){
+        echo $_POST["continent3"];
     }?><br>
-    <?php if (isset($_POST["as"])){
-        echo $_POST["as"];
+    <?php if (isset($_POST["continent4"])){
+        echo $_POST["continent4"];
     }?><br>
-    <?php if (isset($_POST["au"])){
-        echo $_POST["au"];
+    <?php if (isset($_POST["continent5"])){
+        echo $_POST["continent5"];
     }?><br>
-    <?php if (isset($_POST["af"])){
-        echo $_POST["af"];
+    <?php if (isset($_POST["continent6"])){
+        echo $_POST["continent6"];
     }?><br>
-    <?php if (isset($_POST["an"])){
-        echo $_POST["an"];
+    <?php if (isset($_POST["continent7"])){
+        echo $_POST["continent7"];
     }?><br>
 </body>
 </html>
