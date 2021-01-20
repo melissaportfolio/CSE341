@@ -24,6 +24,7 @@ foreach($majors as $key=>$value){
     echo "<label for='major-{$key}'>{$value}</label>";
     }
 ?>
+
     <input id="major-cs" name="major" type="radio" value="cs" selected>
     <label for="major-cs">Computer Science</label>
     <input id="major-wdd" name="major" type="radio" value="wdd">
@@ -35,7 +36,7 @@ foreach($majors as $key=>$value){
 
     <label for="comments">Comments</label>
     <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Comments"></textarea>
-    <button type="submit" value="submit"></button>
+    <button type="submit" value="submit">Submit</button>
     <input id="continent-na" name="continent-na" type="checkbox" value="namerica">
     <label for="continent-na">
     <input id="continent-sa" name="continent-sa" type="checkbox" value="samerica">
@@ -51,5 +52,6 @@ foreach($majors as $key=>$value){
     <input id="continent-ant" name="continent-ant" type="checkbox" value="antarctica">
     <label for="continent-ant">
     </form>
+    
 </body>
 </html>
