@@ -6,13 +6,22 @@
     <title>Document</title>
 </head>
 <body>
+ 
     <form action="week3-team6-2.php" method="post">
 Name: <input type="text" name="name"><br>
 Email: <input type="text" name="email"><br>
-Major: <input type="radio" name="major" value="ComputerScience">Computer Science
+<?php 
+    $majors = array("cs" => "Computer Science", "wdd" => "Web Design and Development", 
+"cit" => "Computer Information Technology", "ce" => "Computer Engineering");
+
+foreach ($majors as $key => $value) {
+    echo '<input type="radio" name="{$key}" value="{$value}">{$value}';
+}
+    ?>
+<!--Major: <input type="radio" name="major" value="ComputerScience">Computer Science
 <input type="radio" name="major" value="WebDesignDevelopment">Web Design and Development
 <input type="radio" name="major" value="ComputerInformationTechnology">Computer Information Technology
-<input type="radio" name="major" value="ComputerEngineering">Computer Engineering
+<input type="radio" name="major" value="ComputerEngineering">Computer Engineering-->
 Comments: <textarea name="comment" rows="5" cols="50"></textarea><br>
 Continents: <input type="checkbox" id="continent1" name="continent1" value="North America">
 <label for="continent1">North America</label><br>
