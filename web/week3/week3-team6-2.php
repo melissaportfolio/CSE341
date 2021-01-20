@@ -11,6 +11,24 @@
     Your major is <?php echo $_POST["major"];?>
     Your comment is <?php echo $_POST["comment"];?>
 
+    <?php 
+    $continents = array('na' => 'North America', 'sa' => 'South America', 'eu' => 'Europe', 'as' => 'Asia', 'au' => 'Australia', 'af' => 'Africa', 'an' => 'Antarctica');
+    $land = $_POST['landarea'];
+    if(empty($land)) 
+      {
+        echo("No continents selected");
+      } 
+      else
+      {
+        $count = count($land);
+        foreach($continents as $key=>$value)
+        {
+          echo($continents[$key] . "<br>");
+        }
+      }
+    ?>
+
+    <!--
     Your visited continents are <?php if (isset($_POST["continent1"])){
         echo $_POST["continent1"];
     }?><br>
@@ -32,5 +50,6 @@
     <?php if (isset($_POST["continent7"])){
         echo $_POST["continent7"];
     }?><br>
+    -->
 </body>
 </html>
