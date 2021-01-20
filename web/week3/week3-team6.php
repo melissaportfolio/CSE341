@@ -15,7 +15,7 @@ Email: <input type="text" name="email"><br>
 "cit" => "Computer Information Technology", "ce" => "Computer Engineering");
 
 foreach ($majors as $key => $value) {
-    echo '<input type="radio" name="{$key}" value="{$value}">{$value}';
+    echo '<input type="radio" name="major" value="'.$value.'">'.$value.'';
 }
     ?>
 <!--Major: <input type="radio" name="major" value="ComputerScience">Computer Science
