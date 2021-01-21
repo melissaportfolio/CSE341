@@ -1,5 +1,6 @@
 <?php session_start();
 require_once("checkout.php");
+require_once("confirmation.php")
 
 ?><!DOCTYPE html>
 <html lang="en">
