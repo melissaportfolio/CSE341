@@ -16,7 +16,10 @@
 Name: <input type="text" name="name"><br>
 Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
-Order summary: <p><?php echo $_SESSION["therapy1"];?></p>
+Order summary: <?php foreach ($_SESSION as $key => $value)
+{
+    echo "<p>" . $value . "</p>";
+}?>
 
 
 </form>
