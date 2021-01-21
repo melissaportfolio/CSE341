@@ -16,7 +16,7 @@
 Name: <input type="text" name="name"><br>
 Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
-Order summary: <?php echo $_SESSION["therapy1"];?>
+Order summary: <p><?php echo $_SESSION["therapy1"];?></p>
 
 
 </form>
