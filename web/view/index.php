@@ -11,7 +11,9 @@
         <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-
+<figure>
+    <img src="">
+</figure>
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/footer.php'; ?>
     </footer>

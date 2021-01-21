@@ -15,11 +15,9 @@ require_once("checkout.php");
     </nav>
     <br><br><br>
 <h2>Purchase a therapy session:</h2>
-<form action="" method="post">
-<p>One hour individual session:</p>
-<p>One hour family session:</p>
-<p>Bundle of 10 individual sessions:</p>
-<p>Bundle of 10 family sessions:</p>
+
+
+<form action="checkout.php" method="post">
 <input id="session_ind" name="therapy" type="radio" value="therapy">
 <label for="session_ind">One hour individual session:</label>
 <input id="session_fam" name="therapy" type="radio" value="therapy">
@@ -30,6 +28,8 @@ require_once("checkout.php");
 <label for="session_fam_10">Bundle of 10 family sessions:</label>
 <button type="submit" name="submit" value="true">Checkout</button>
 </form>
+
+
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/footer.php'; ?>
     </footer>

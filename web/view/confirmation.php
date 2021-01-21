@@ -11,15 +11,13 @@
         <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-<h2>Checkout</h2>
-<form action="confirmation.php" method="post">
-Name: <input type="text" name="name"><br>
-Email: <input type="email" name="email"><br>
-Mailing Address: <input type="text" name="address"><br>
-Order summary: <?php echo $_POST["therapy"];?>
+<h2>Checkout Confirmation</h2>
 
-</form>
-<a href="/web/view/browse-items.php">Return to Cart</a>
+    Thank you <?php echo $_POST["name"];?>
+    Email: <?php echo $_POST["email"];?>
+    Mailing Address <?php echo $_POST["address"];?>
+    Order Summary <?php echo $_POST["therapy"];?>
+
 
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/footer.php'; ?>
