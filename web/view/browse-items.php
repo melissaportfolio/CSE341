@@ -1,6 +1,5 @@
 <?php session_start();
-require_once("checkout.php");
-require_once("confirmation.php")
+
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -18,14 +17,14 @@ require_once("confirmation.php")
 <h2>Purchase a therapy session:</h2>
 
 
-<form action="checkout.php" method="post">
-<input id="session_ind" name="therapy" type="radio" value="therapy">
+<form action="checkout.php" method="POST">
+<input id="session_ind" name="therapy1" type="radio" value="therapy">
 <label for="session_ind">One hour individual session:</label>
-<input id="session_fam" name="therapy" type="radio" value="therapy">
+<input id="session_fam" name="therapy2" type="radio" value="therapy">
 <label for="session_fam">One hour family session:</label>
-<input id="session_ind_10" name="therapy" type="radio" value="therapy">
+<input id="session_ind_10" name="therapy3" type="radio" value="therapy">
 <label for="session_ind_10">Bundle of 10 individual sessions:</label>
-<input id="session_fam_10" name="therapy" type="radio" value="therapy">
+<input id="session_fam_10" name="therapy4" type="radio" value="therapy">
 <label for="session_fam_10">Bundle of 10 family sessions:</label>
 <button type="submit" name="submit" value="true">Checkout</button>
 </form>
@@ -44,4 +43,21 @@ require_once("confirmation.php")
 if (isset($_GET["destroy"])){
     session_destroy();
 }
+?>
+<?php 
+if (isset($_POST['therapy1'])){
+    $_SESSION["therapy1"] = $_POST['therapy1'];
+}
+if (isset($_POST['therapy2'])){
+    $_SESSION["therapy2"] = $_POST['therapy2'];
+}
+if (isset($_POST['therapy3'])){
+    $_SESSION["therapy3"] = $_POST['therapy3'];
+}
+if (isset($_POST['therapy4'])){
+    $_SESSION["therapy4"] = $_POST['therapy4'];
+}
+
+echo "Session";
+var_dump($_SESSION);
 ?>
