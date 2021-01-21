@@ -26,7 +26,7 @@ Order summary: <?php foreach ($_SESSION as $key => $value)
 
 
 </form>
-<a href="/web/view/browse-items.php">Return to Cart</a>
+<a href="browse-items.php">Return to Cart</a>
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
