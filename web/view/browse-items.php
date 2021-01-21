@@ -11,7 +11,7 @@
 <body>
 <h1>Namaste Therapy</h1>
     <nav id="nav">
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/therapy-nav.php'; ?>
+        <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
 <h2>Purchase a therapy session:</h2>
@@ -31,7 +31,7 @@
 
 
     <footer>
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/footer.php'; ?>
+        <?php require  '../partials/footer.php'; ?>
     </footer>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
