@@ -18,7 +18,7 @@
 
 
 <form action="" method="POST">
-<input id="session_ind" name="therapy1" type="radio" value="therapy">
+<input id="session_ind" name="therapy1" type="radio" value="One hour individual session">
 <label for="session_ind">One hour individual session:</label>
 <input id="session_fam" name="therapy2" type="radio" value="therapy">
 <label for="session_fam">One hour family session:</label>
@@ -31,7 +31,7 @@
 
 
     <footer>
-        <?php require  '../partials/footer.php'; ?>
+        <?php require  '../partials/therapy-footer.php'; ?>
     </footer>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -29,7 +29,7 @@ Order summary: <?php foreach ($_SESSION as $key => $value)
 <a href="/web/view/browse-items.php">Return to Cart</a>
 
     <footer>
-        <?php require  '../partials/footer.php'; ?>
+        <?php require  '../partials/therapy-footer.php'; ?>
     </footer>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
