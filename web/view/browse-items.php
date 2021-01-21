@@ -29,6 +29,8 @@
 <button type="submit" name="submit" value="true">Add to cart</button>
 </form>
 
+<a href="shoppingcart.php">View Cart</a>
+
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
