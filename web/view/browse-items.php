@@ -45,10 +45,10 @@ if (isset($_GET["destroy"])){
 }
 ?>
 <?php 
-if (isset($_POST['therapy1'])){
-    $_SESSION["therapy1"] = $_POST['therapy1'];
+if (isset($_POST["therapy1"])){
+    $_SESSION["therapy1"] = $_POST["therapy1"];
 }
-if (isset($_POST['therapy2'])){
+if (isset($_POST["therapy2"])){
     $_SESSION["therapy2"] = $_POST['therapy2'];
 }
 if (isset($_POST['therapy3'])){
