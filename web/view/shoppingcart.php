@@ -8,7 +8,7 @@
 <body>
 <h1>Namaste Therapy</h1>
     <nav id="nav">
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/therapy-nav.php'; ?>
+        <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
 <h2>Checkout</h2>
@@ -16,13 +16,14 @@
 Name: <input type="text" name="name"><br>
 Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
-Order summary: <?php echo $_POST["therapy"];?>
+Order summary: <?php echo $_SESSION["therapy1"];?>
+
 
 </form>
 <a href="/web/view/browse-items.php">Return to Cart</a>
 
     <footer>
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/footer.php'; ?>
+        <?php require  '../partials/footer.php'; ?>
     </footer>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

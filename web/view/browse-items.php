@@ -17,7 +17,7 @@
 <h2>Purchase a therapy session:</h2>
 
 
-<form action="checkout.php" method="POST">
+<form action="" method="POST">
 <input id="session_ind" name="therapy1" type="radio" value="therapy">
 <label for="session_ind">One hour individual session:</label>
 <input id="session_fam" name="therapy2" type="radio" value="therapy">
