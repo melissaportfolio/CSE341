@@ -35,11 +35,13 @@ if (isset($_POST['removeItemBundle_of_10_family_sessions']))
     </nav>
     <br><br><br>
 <h2>Shopping Cart</h2>
+<!--
 <form id="checkout" action="confirmation.php" method="post">
 Name: <input type="text" name="name"><br>
 Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
 </form>
+-->
 Order summary: <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>" .
@@ -47,11 +49,12 @@ Order summary: <?php foreach ($_SESSION as $key => $value)
     . "<button  type='submit' name='removeItem" . $value . "' value='true'>Remove</button>"
     . "</form>";
 }?>
-
+<!--
 <button onclick="checkout()" type="submit" name="submit" value="true">Checkout</button>
-
+-->
 
 <a href="browse-items.php">Return to Browse</a>
+<a href="checkout.php">Checkout</a>
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
