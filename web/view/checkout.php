@@ -24,14 +24,14 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
 Name: <input type="text" name="name"><br>
 Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
-</form>
+
 Order summary: <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>" ;
 }?>
 
 <button onclick="checkout()" type="submit" name="submit" value="true">Complete Purchase</button>
-
+</form>
 
 <a href="view-cart.php">Return to Cart</a>
 
