@@ -15,8 +15,8 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
 </head>
 <body>
 <h1>Namaste Therapy</h1>
-    <nav id="nav">
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/therapy-nav.php'; ?>
+<nav id="nav">
+        <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
 <h2>Checkout Confirmation</h2>
@@ -30,8 +30,8 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
 }?>
 
 
-    <footer>
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '../partials/footer.php'; ?>
+<footer>
+        <?php require  '../partials/therapy-footer.php'; ?>
     </footer>
     <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -40,3 +40,10 @@ button {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+}

@@ -10,16 +10,16 @@
 </head>
 <body>
 <h1>Namaste Therapy</h1>
-    <nav id="nav">
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '../view/partials/therapy-nav.php'; ?>
+<nav id="nav">
+        <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
 <figure>
     <img src="">
     <a href="browse-items.php">View therapy session information</a>
 </figure>
-    <footer>
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '../view/partials/therapy-footer.php'; ?>
+<footer>
+        <?php require  '../partials/therapy-footer.php'; ?>
     </footer>
     <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
