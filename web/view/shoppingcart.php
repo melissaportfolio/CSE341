@@ -5,6 +5,18 @@ if (isset($_POST['removeItemOne_hour_individual_session']))
 {
     unset($_SESSION['therapy1']);
 }
+if (isset($_POST['removeItemOne_hour_family_session']))
+{
+    unset($_SESSION['therapy2']);
+}
+if (isset($_POST['removeItemBundle_of_10_individual_sessions']))
+{
+    unset($_SESSION['therapy3']);
+}
+if (isset($_POST['removeItemBundle_of_10_family_sessions']))
+{
+    unset($_SESSION['therapy4']);
+}
 
 ?><!DOCTYPE html>
 <html lang="en">

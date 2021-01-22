@@ -20,11 +20,11 @@
 <form action="" method="POST">
 <input id="session_ind" name="therapy1" type="radio" value="One_hour_individual_session">
 <label for="session_ind">One hour individual session:</label>
-<input id="session_fam" name="therapy2" type="radio" value="One hour family session">
+<input id="session_fam" name="therapy2" type="radio" value="One_hour_family_session">
 <label for="session_fam">One hour family session:</label>
-<input id="session_ind_10" name="therapy3" type="radio" value="Bundle of 10 individual sessions">
+<input id="session_ind_10" name="therapy3" type="radio" value="Bundle_of_10_individual_sessions">
 <label for="session_ind_10">Bundle of 10 individual sessions:</label>
-<input id="session_fam_10" name="therapy4" type="radio" value="Bundle of 10 family sessions">
+<input id="session_fam_10" name="therapy4" type="radio" value="Bundle_of_10_family_sessions">
 <label for="session_fam_10">Bundle of 10 family sessions:</label>
 <button type="submit" name="submit" value="true">Add to cart</button>
 </form>
