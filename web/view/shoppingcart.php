@@ -20,10 +20,11 @@ if (isset($_POST['removeItemOne_hour_individual_session']))
     </nav>
     <br><br><br>
 <h2>Checkout</h2>
-<form id="checkout" action="" method="post">
+<form id="checkout" action="confirmation.php" method="post">
 Name: <input type="text" name="name"><br>
 Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
+</form>
 Order summary: <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>" .
@@ -33,7 +34,7 @@ Order summary: <?php foreach ($_SESSION as $key => $value)
 }?>
 
 <button onclick="checkout()" type="submit" name="submit" value="true">Checkout</button>
-</form>
+
 
 <a href="browse-items.php">Return to Cart</a>
 
