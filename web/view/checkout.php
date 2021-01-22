@@ -1,22 +1,7 @@
 <?php session_start();
-
-
-if (isset($_POST['removeItemOne_hour_individual_session']))
-{
-    unset($_SESSION['therapy1']);
-}
-if (isset($_POST['removeItemOne_hour_family_session']))
-{
-    unset($_SESSION['therapy2']);
-}
-if (isset($_POST['removeItemBundle_of_10_individual_sessions']))
-{
-    unset($_SESSION['therapy3']);
-}
-if (isset($_POST['removeItemBundle_of_10_family_sessions']))
-{
-    unset($_SESSION['therapy4']);
-}
+$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+$address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -42,10 +27,7 @@ Mailing Address: <input type="text" name="address"><br>
 </form>
 Order summary: <?php foreach ($_SESSION as $key => $value)
 {
-    echo "<p>" . $value . "</p>" .
-    "<form action='' method='post'>" 
-    . "<button  type='submit' name='removeItem" . $value . "' value='true'>Remove</button>"
-    . "</form>";
+    echo "<p>" . $value . "</p>" ;
 }?>
 
 <button onclick="checkout()" type="submit" name="submit" value="true">Complete Purchase</button>
