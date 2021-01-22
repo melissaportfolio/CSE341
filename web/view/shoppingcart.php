@@ -1,11 +1,6 @@
 <?php session_start();
 
-if(isset($_POST['name']))
-{
-    $name = isset($_SESSION['name']) ? $_SESSION['name'] : array();
-    $name[] = $_POST['name'];
-    $_SESSION['name'] = $name;
-}
+
 if (isset($_POST['removeItemOne_hour_individual_session']))
 {
     unset($_SESSION['therapy1']);
