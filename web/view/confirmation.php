@@ -21,9 +21,9 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
     <br><br><br>
 <h2>Checkout Confirmation</h2>
 
-    Thank you <?php echo $name;?>
-    Email: <?php echo $email;?>
-    Mailing Address <?php echo $address;?>
+    Thank you <?php echo "<p>" . $name . "</p>";?><br>
+    Email: <?php echo "<p>" . $email . "</p>";?><br>
+    Mailing Address <?php echo "<p>" . $address . "</p>";?><br>
     Order Summary <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>";

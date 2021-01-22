@@ -23,7 +23,11 @@ h2 {
     font-size: 30px;
     text-align: center;
 }
-
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding: 20px;
+}
 footer p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
