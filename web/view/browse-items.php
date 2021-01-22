@@ -7,6 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse Items | Namaste Therapy</title>
+    <link rel="stylesheet" href="../css/therapy.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Nunito&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 <h1>Namaste Therapy</h1>
@@ -14,7 +17,7 @@
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-<h2>Purchase a therapy session:</h2>
+<h2>Therapy options:</h2>
 
 
 <form action="" method="POST">

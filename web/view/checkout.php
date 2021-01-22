@@ -34,7 +34,7 @@ if (isset($_POST['removeItemBundle_of_10_family_sessions']))
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-<h2>Shopping Cart</h2>
+<h2>Checkout</h2>
 <form id="checkout" action="confirmation.php" method="post">
 Name: <input type="text" name="name"><br>
 Email: <input type="email" name="email"><br>
@@ -48,10 +48,10 @@ Order summary: <?php foreach ($_SESSION as $key => $value)
     . "</form>";
 }?>
 
-<button onclick="checkout()" type="submit" name="submit" value="true">Checkout</button>
+<button onclick="checkout()" type="submit" name="submit" value="true">Complete Purchase</button>
 
 
-<a href="browse-items.php">Return to Browse</a>
+<a href="view-cart.php">Return to Cart</a>
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
