@@ -25,7 +25,7 @@ if (isset($_POST['removeItemOne hour individual session']))
     </nav>
     <br><br><br>
 <h2>Checkout</h2>
-<form id="checkout" action="confirmation.php" method="post">
+<form id="checkout" action="" method="post">
 Name: <input type="text" name="name"><br>
 Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
