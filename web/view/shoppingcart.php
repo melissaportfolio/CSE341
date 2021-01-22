@@ -1,5 +1,15 @@
 <?php session_start();
 
+if(isset($_POST['name']))
+{
+    $name = isset($_SESSION['name']) ? $_SESSION['name'] : array();
+    $name[] = $_POST['name'];
+    $_SESSION['name'] = $name;
+}
+if (isset($_POST['remove']))
+{
+    unset($_SESSION['name']);
+}
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -15,17 +25,21 @@
     </nav>
     <br><br><br>
 <h2>Checkout</h2>
-<form action="confirmation.php" method="post">
+<form id="checkout" action="confirmation.php" method="post">
 Name: <input type="text" name="name"><br>
 Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
 Order summary: <?php foreach ($_SESSION as $key => $value)
 {
-    echo "<p>" . $value . "</p>";
+    echo "<p>" . $value . "</p>" .
+    "<form>" 
+    . "<button  type='submit' name='removeItem" . $value . "' value='true'>Remove</button>"
+    . "</form>";
 }?>
 
-
+<button onclick="checkout()" type="submit" name="submit" value="true">Checkout</button>
 </form>
+
 <a href="browse-items.php">Return to Cart</a>
 
     <footer>

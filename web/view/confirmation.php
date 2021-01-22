@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php session_start();
+
+$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+$address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,10 +18,13 @@
     <br><br><br>
 <h2>Checkout Confirmation</h2>
 
-    Thank you <?php echo $_POST["name"];?>
-    Email: <?php echo $_POST["email"];?>
-    Mailing Address <?php echo $_POST["address"];?>
-    Order Summary <?php echo $_POST["therapy"];?>
+    Thank you <?php echo $name;?>
+    Email: <?php echo $email;?>
+    Mailing Address <?php echo $address;?>
+    Order Summary <?php foreach ($_SESSION as $key => $value)
+{
+    echo "<p>" . $value . "</p>";
+}?>
 
 
     <footer>
