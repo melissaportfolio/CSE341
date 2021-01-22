@@ -29,3 +29,14 @@ footer p {
     font-size: 15px;
     text-align: center;
 }
+
+form {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
