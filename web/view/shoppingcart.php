@@ -6,7 +6,7 @@ if(isset($_POST['name']))
     $name[] = $_POST['name'];
     $_SESSION['name'] = $name;
 }
-if (isset($_POST['removeItemOne hour individual session']))
+if (isset($_POST['removeItemOne_hour_individual_session']))
 {
     unset($_SESSION['therapy1']);
 }

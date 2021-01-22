@@ -18,7 +18,7 @@
 
 
 <form action="" method="POST">
-<input id="session_ind" name="therapy1" type="radio" value="One hour individual session">
+<input id="session_ind" name="therapy1" type="radio" value="One_hour_individual_session">
 <label for="session_ind">One hour individual session:</label>
 <input id="session_fam" name="therapy2" type="radio" value="One hour family session">
 <label for="session_fam">One hour family session:</label>
