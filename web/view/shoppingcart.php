@@ -6,9 +6,9 @@ if(isset($_POST['name']))
     $name[] = $_POST['name'];
     $_SESSION['name'] = $name;
 }
-if (isset($_POST['remove']))
+if (isset($_POST['removeItemOne hour individual session']))
 {
-    unset($_SESSION['name']);
+    unset($_SESSION['therapy1']);
 }
 
 ?><!DOCTYPE html>
@@ -32,7 +32,7 @@ Mailing Address: <input type="text" name="address"><br>
 Order summary: <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>" .
-    "<form>" 
+    "<form action='' method='post'>" 
     . "<button  type='submit' name='removeItem" . $value . "' value='true'>Remove</button>"
     . "</form>";
 }?>
