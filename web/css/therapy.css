@@ -57,5 +57,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color:aquamarine;
+    background-color:aquamarine;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:darkmagenta;
 }
