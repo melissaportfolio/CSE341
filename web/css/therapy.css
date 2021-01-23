@@ -44,6 +44,9 @@ form {
 button {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    color: black;
+    background-color: azure;
+    border-radius: 5px 5px 5px 5px;
 }
 
 nav ul {
@@ -68,15 +71,17 @@ nav ul li a:hover {
     color: black;
     padding: 20px;
 }
-
-a:hover {
-    color:darkmagenta;
-}
-button {
+.link-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     color: black;
     background-color: azure;
     border-radius: 5px 5px 5px 5px;
 }
+a:hover {
+    color:darkmagenta;
+}
+
 .confirmation {
     text-align: center;
 }
