@@ -33,7 +33,7 @@ Order summary: <?php foreach ($_SESSION as $key => $value)
 <button onclick="checkout()" type="submit" name="submit" value="true">Complete Purchase</button>
 </form>
 
-<a href="view-cart.php">Return to Cart</a>
+<a class="link" href="view-cart.php">Return to Cart</a>
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>

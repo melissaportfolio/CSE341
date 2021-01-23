@@ -53,8 +53,8 @@ Mailing Address: <input type="text" name="address"><br>
 <button onclick="checkout()" type="submit" name="submit" value="true">Checkout</button>
 -->
 <br><br>
-<a href="browse-items.php">Return to Browse</a><br>
-<a href="checkout.php">Checkout</a><br>
+<a class="link" href="browse-items.php">Return to Browse</a><br>
+<a class="link" href="checkout.php">Checkout</a><br>
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>

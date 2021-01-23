@@ -32,7 +32,7 @@
 <button type="submit" name="submit" value="true">Add to cart</button>
 </form><br>
 
-<a href="view-cart.php">View Cart</a>
+<a class="link" href="view-cart.php">View Cart</a>
 
 
     <footer>

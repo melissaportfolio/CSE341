@@ -16,7 +16,7 @@
     <br><br><br>
 <figure>
     <img src="">
-    <a href="browse-items.php">View therapy session information</a>
+    <a class="link" href="browse-items.php">View therapy session information</a>
 </figure>
 <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
