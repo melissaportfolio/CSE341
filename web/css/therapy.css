@@ -76,3 +76,6 @@ button {
     background-color: azure;
     border-radius: 5px 5px 5px 5px;
 }
+.confirmation {
+    text-align: center;
+}

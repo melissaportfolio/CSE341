@@ -20,15 +20,15 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
     </nav>
     <br><br><br>
 <h2>Checkout Confirmation</h2>
-
-    <p>Thank you</p> <?php echo "<p>" . $name . "</p>";?><br>
-    <p>Email: </p><?php echo "<p>" . $email . "</p>";?><br>
-   <p> Mailing Address </p><?php echo "<p>" . $address . "</p>";?><br>
+<div class="confirmation">
+    <p>Thank you</p> <?php echo "<p>" . $name . "</p>";?>
+    <p>Email: </p><?php echo "<p>" . $email . "</p>";?>
+   <p> Mailing Address </p><?php echo "<p>" . $address . "</p>";?>
    <p> Order Summary</p> <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>";
 }?>
-
+</div>
 
 <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
