@@ -14,3 +14,8 @@ function checkout() {
     console.log(formElements);
     //filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 }
+
+function success() {
+    
+    alert("Item added to cart successfully");
+}
