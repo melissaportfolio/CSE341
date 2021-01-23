@@ -80,8 +80,13 @@ nav ul li a:hover {
     border-radius: 5px 5px 5px 5px;
     padding: 20px;
 }
+.link-button:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+}
 a:hover {
     color:darkmagenta;
+    cursor: pointer;
 }
 
 .confirmation {
