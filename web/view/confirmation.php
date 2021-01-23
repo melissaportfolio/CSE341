@@ -22,7 +22,7 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
     <br><br><br>
 <h2>Checkout Confirmation</h2>
 <div class="confirmation">
-    <p>Thank you</p> <?php echo "<p>" . $name . "</p>";?>
+    <p>Thank you</p> <?php echo "<p>" . "Thank you" . $name . "</p>";?>
     <p>Email: </p><?php echo "<p>" . $email . "</p>";?>
    <p> Mailing Address </p><?php echo "<p>" . $address . "</p>";?>
    <p> Order Summary</p> <?php foreach ($_SESSION as $key => $value)
