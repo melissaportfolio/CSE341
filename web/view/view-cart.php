@@ -42,7 +42,7 @@ Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
 </form>
 -->
-Order summary: <?php foreach ($_SESSION as $key => $value)
+<p>Order summary:</p> <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>" .
     "<form action='' method='post'>" 
@@ -52,9 +52,9 @@ Order summary: <?php foreach ($_SESSION as $key => $value)
 <!--
 <button onclick="checkout()" type="submit" name="submit" value="true">Checkout</button>
 -->
-
-<a href="browse-items.php">Return to Browse</a>
-<a href="checkout.php">Checkout</a>
+<br><br>
+<a href="browse-items.php">Return to Browse</a><br>
+<a href="checkout.php">Checkout</a><br>
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
