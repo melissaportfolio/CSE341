@@ -63,7 +63,7 @@ nav ul li a:hover {
 .link {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: black;
     padding: 20px;
 }

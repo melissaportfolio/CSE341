@@ -21,10 +21,10 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
     <br><br><br>
 <h2>Checkout Confirmation</h2>
 
-    Thank you <?php echo "<p>" . $name . "</p>";?><br>
-    Email: <?php echo "<p>" . $email . "</p>";?><br>
-    Mailing Address <?php echo "<p>" . $address . "</p>";?><br>
-    Order Summary <?php foreach ($_SESSION as $key => $value)
+    <p>Thank you</p> <?php echo "<p>" . $name . "</p>";?><br>
+    <p>Email: </p><?php echo "<p>" . $email . "</p>";?><br>
+   <p> Mailing Address </p><?php echo "<p>" . $address . "</p>";?><br>
+   <p> Order Summary</p> <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>";
 }?>

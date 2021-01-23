@@ -29,10 +29,10 @@ Order summary: <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>" ;
 }?>
-
+<br><br>
 <button onclick="checkout()" type="submit" name="submit" value="true">Complete Purchase</button>
 </form>
-
+<br><br>
 <a class="link" href="view-cart.php">Return to Cart</a>
 
     <footer>

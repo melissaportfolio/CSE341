@@ -17,7 +17,7 @@
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-<h2>Therapy options:</h2>
+<h2>Therapy options</h2>
 
 
 <form action="" method="POST">
