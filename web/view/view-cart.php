@@ -53,7 +53,7 @@ Mailing Address: <input type="text" name="address"><br>
 <button onclick="checkout()" type="submit" name="submit" value="true">Checkout</button>
 -->
 <br><br>
-<a class="link" href="browse-items.php">Return to Browse</a><br>
+<a class="link" href="browse-items.php">Return to Browse</a><br><br><br>
 <a class="link" href="checkout.php">Checkout</a><br>
 
     <footer>
