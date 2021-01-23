@@ -64,6 +64,4 @@ if (isset($_POST["therapy4"])){
     $_SESSION["therapy4"] = $_POST["therapy4"];
 }
 
-echo "Session";
-var_dump($_SESSION);
-?>
+
