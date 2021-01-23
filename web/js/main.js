@@ -15,7 +15,3 @@ function checkout() {
     //filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 }
 
-function success() {
-    
-    document.getElementById("success").innerHTML = "Item added to cart successfully";
-}

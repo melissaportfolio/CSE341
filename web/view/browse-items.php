@@ -31,8 +31,8 @@
 <input id="session_fam_10" name="therapy4" type="checkbox" value="Bundle_of_10_family_sessions">
 <label for="session_fam_10">Bundle of 10 family sessions</label><br><br><br>
 <button onclick="success()" type="submit" name="submit" value="true">Add to cart</button>
-</form><br>
-<p id="success"></p>
+</form>
+
 <a class="link" href="view-cart.php">View Cart</a>
 
 
