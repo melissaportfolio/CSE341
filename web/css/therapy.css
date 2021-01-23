@@ -47,9 +47,15 @@ button {
 
 nav ul {
     list-style: none;
+    background-color: azure;
 }
 nav ul li a {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color:aquamarine;
 }
