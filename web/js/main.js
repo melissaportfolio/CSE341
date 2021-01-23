@@ -17,5 +17,5 @@ function checkout() {
 
 function success() {
     
-    alert("Item added to cart successfully");
+    document.getElementById("success").innerHTML = "Item added to cart successfully";
 }
