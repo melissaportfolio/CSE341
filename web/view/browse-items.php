@@ -66,5 +66,12 @@ if (isset($_POST["therapy4"])){
 ?>
 <?php
 
-?>
+
+foreach ($_SESSION as $items)
+{
+    count($_SESSION['therapy1']['therapy2']['therapy3']['therapy4']);
+    echo "<p>" . $items . "</p>" ;
+   
+}?>
+
 
