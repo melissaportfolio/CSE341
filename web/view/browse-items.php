@@ -63,5 +63,8 @@ if (isset($_POST["therapy3"])){
 if (isset($_POST["therapy4"])){
     $_SESSION["therapy4"] = $_POST["therapy4"];
 }
+?>
+<?php
 
+?>
 

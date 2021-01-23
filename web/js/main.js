@@ -8,6 +8,8 @@
 //     });
 //   });
 
+/* Checkout page */
+
 function checkout() {
     var form = document.getElementById("checkout");
     var formElements = form.elements;
