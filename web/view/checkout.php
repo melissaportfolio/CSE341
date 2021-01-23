@@ -29,6 +29,7 @@ Mailing Address: <input type="text" name="address"><br>
 Order summary: <?php foreach ($_SESSION as $key => $value)
 {
     echo "<p>" . $value . "</p>" ;
+    echo "<p>" . $key . "</p>" ;
 }?>
 <br><br>
 <button onclick="checkout()" type="submit" name="submit" value="true">Complete Purchase</button>
