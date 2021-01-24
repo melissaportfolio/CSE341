@@ -66,9 +66,10 @@ if (isset($_POST["therapy4"])){
 ?>
 <?php
 
-$sum = 0;
+
 foreach ($_SESSION as $items)
 {
+    $sum = 0;
     $sum += $items;
     count($items);
     echo $sum;
