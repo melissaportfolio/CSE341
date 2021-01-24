@@ -95,6 +95,7 @@ a:hover {
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
 }
 .home-img img{
     display: grid;
