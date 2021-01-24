@@ -17,13 +17,13 @@
 
 <body>
     <h1>Melissa Hall</h1>
-    <nav id="nav"">
+    <nav id="nav">
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/nav.php'; ?>
     </nav>
     <br><br><br>
-    <h1>More Coming Soon</h1>
-    <a class="link" href="/week2/week2.html">Week 2 Activity</a>
-    <a class="link" href="view/browse-items.php">Shopping Cart</a>
+    <h1>Assignments</h1>
+    <a class="link" href="/week2/week2.html">Week 2 Activity</a><br>
+    <a class="link" href="view/browse-items.php">Shopping Cart</a><br>
     <footer>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.php'; ?>
     </footer>
