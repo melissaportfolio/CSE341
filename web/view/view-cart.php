@@ -45,7 +45,7 @@ Mailing Address: <input type="text" name="address"><br>
 -->
 <p>Order summary:</p> <?php foreach ($_SESSION as $key => $value)
 {
-    $value = str_replace($value,"_"," ", $value);
+    str_replace($value,"_"," ", $value);
     echo "<p>" . $value . "</p>" .
     "<form action='' method='post'>" 
     . "<button  type='submit' name='removeItem" . $value . "' value='true'>Remove</button>"
