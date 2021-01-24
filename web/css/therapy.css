@@ -103,8 +103,9 @@ a:hover {
 .home-text p {
     display: grid;
     width: 95%;
+    font-size: 20px;
 }
-.home-link a {
+#home-link {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-align: center;

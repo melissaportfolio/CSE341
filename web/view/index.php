@@ -50,7 +50,7 @@
 
 
 
-    <a class="home-link" href="browse-items.php">View therapy options</a>
+    <a id="home-link" href="browse-items.php">View therapy options</a>
 
 
 
