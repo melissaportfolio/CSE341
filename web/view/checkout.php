@@ -28,7 +28,7 @@ Mailing Address: <input type="text" name="address"><br>
 
 Order summary: <?php foreach ($_SESSION as $key => $value)
 {
-    echo "<p>" . $value . "</p>" ;
+    echo "<p>" . $text . "</p>" ;
    
 }?>
 <br><br>

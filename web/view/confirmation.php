@@ -27,7 +27,7 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
    <?php echo "<p>" . "Address: " . $address . "</p>";?>
    <p> Order Summary</p> <?php foreach ($_SESSION as $key => $value)
 {
-    echo "<p>" . $value . "</p>";
+    echo "<p>" . $text . "</p>";
 }?>
 </div>
 
