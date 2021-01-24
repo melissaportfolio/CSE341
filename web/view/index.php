@@ -33,17 +33,16 @@
             </p>
             <p>We can help.</p>
         </div>
-        <div class="home-img">
-            <img src="../images/christopher-paul-unsplash.jpg" alt="game board">
-        </div>
         <div class="home-text">
             <p>Here at Namaste Therapy, we use game playing to help your teen establish 
                 confidence, healthy coping skills, and lessen anxiety.</p>
                 <p>Individual and family sessions are available.</p>
         </div>
         <div class="home-img">
-            <img src="../images/ethan-garvey-unsplash.jpg" alt="teen male">
+            <img src="../images/christopher-paul-unsplash.jpg" alt="game board">
         </div>
+       
+        
 
     </div>
 
