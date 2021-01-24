@@ -70,12 +70,12 @@ $sum = 0;
 foreach ($_SESSION as $items)
 {
     $sum += $items;
-    //count($items);
-    
+    count($items);
+    echo $sum;
 
     
 }
-echo $sum;
+
 ?>
 
 
