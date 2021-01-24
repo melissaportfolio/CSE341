@@ -27,7 +27,7 @@ Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
 
 Order summary: <?php foreach ($_SESSION as $key => $value)
-{   $text = $value;
+{   $text = str_replace('_', ' ', $value);
     echo "<p>" . $text . "</p>" ;
    
 }?>
