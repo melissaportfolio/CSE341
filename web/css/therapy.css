@@ -96,15 +96,15 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.home-img {
+.home-img img{
     display: grid;
-    width: 100px;
+    width: 50%;
 }
-.home-text {
+.home-text p {
     display: grid;
-    width: 100px;
+    width: 50%;
 }
-.home-link {
+.home-link a {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     text-align: center;
