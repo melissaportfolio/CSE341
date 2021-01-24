@@ -92,7 +92,9 @@ a:hover {
 .confirmation {
     text-align: center;
 }
-
+.home-grid {
+    display: flex;
+}
 .home-img {
-    width: 300px;
+    width: 150px;
 }
