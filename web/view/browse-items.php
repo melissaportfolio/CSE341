@@ -64,19 +64,6 @@ if (isset($_POST["therapy4"])){
     $_SESSION["therapy4"] = $_POST["therapy4"];
 }
 ?>
-<?php
 
-
-foreach ($_SESSION as $items)
-{
-    $sum = 0;
-    $sum += $items;
-    count($items);
-    echo $sum;
-
-    
-}
-
-?>
 
 
