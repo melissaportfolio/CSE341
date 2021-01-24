@@ -16,7 +16,7 @@
     </nav>
     <br><br><br>
 
-    <div class="container">
+
   <h2>Come work with us at Namaste Therapy</h2>  
   <div class="home-grid">
    
@@ -31,9 +31,9 @@
         <img src="../images/ethan-garvey-unsplash.jpg" alt="teen male">
       </div>
     
-
+  </div>
    
-</div>
+
 
 
 <figure>
