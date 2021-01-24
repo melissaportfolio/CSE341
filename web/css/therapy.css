@@ -98,11 +98,11 @@ a:hover {
 }
 .home-img img{
     display: grid;
-    width: 50%;
+    width: 95%;
 }
 .home-text p {
     display: grid;
-    width: 50%;
+    width: 95%;
 }
 .home-link a {
     font-family: 'Montserrat', sans-serif;
