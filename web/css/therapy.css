@@ -93,8 +93,13 @@ a:hover {
     text-align: center;
 }
 .home-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .home-img {
+    display: grid;
     width: 150px;
+}
+.home-text {
+    display: grid;
 }
