@@ -33,7 +33,9 @@
 <button onclick="success()" type="submit" name="submit" value="true">Add to cart</button>
 </form>
 
-<a class="link" href="view-cart.php">View Cart</a>
+<a class="link" href="view-cart.php">View Cart</a><br><br>
+
+<a class="link" href="index.php">Learn more</a>
 
 
     <footer>
