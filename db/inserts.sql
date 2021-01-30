@@ -34,4 +34,6 @@ VALUES ('Ellie', 'Jackson', '123 Golden Street', 'Provo', 'UT', '84606'),
 INSERT INTO journal(journal_entry, journal_entry_date, customer_id)
 VALUES ('Today was a good day.', '2021-01-01', (SELECT customer_id FROM customer WHERE customer_id = 1)),
 ('Today was another good day.', '2021-01-02', (SELECT customer_id FROM customer WHERE customer_id = 1)),
-('Third good day in a row.', '2021-01-03', (SELECT customer_id FROM customer WHERE customer_id = 1));
+('Third good day in a row.', '2021-01-03', (SELECT customer_id FROM customer WHERE customer_id = 1)),
+('Feeling kind of anxious today.', '2020-12-31', (SELECT customer_id FROM customer WHERE customer_id = 2)),
+('Had a hard time sleeping.', '2021-01-02', (SELECT customer_id FROM customer WHERE customer_id = 2));

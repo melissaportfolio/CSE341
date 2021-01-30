@@ -16,10 +16,6 @@ therapy_session_id SERIAL PRIMARY KEY,
 therapy_session_name VARCHAR(60),
 therapy_session_price VARCHAR(10),
 therapy_session_description VARCHAR(100)
--- article_id INT,
--- CONSTRAINT fk_article 
---     FOREIGN KEY (article_id) 
---         REFERENCES articles(article_id)
 );
 
 
@@ -28,10 +24,6 @@ therapist_id SERIAL PRIMARY KEY,
 full_name VARCHAR(60),
 phone VARCHAR(30),
 email VARCHAR(60)
--- appointment_id INT,
--- CONSTRAINT fk_appointment_t 
---     FOREIGN KEY (appointment_id) 
---         REFERENCES appointments(appointment_id)
 );
 
 CREATE TABLE appointments (
@@ -61,8 +53,7 @@ zip INT
 );
 
 CREATE TABLE journal (
-journal_id SERIAL PRIMARY KEY,
-journal_entry_id SERIAL,
+journal_entry_id SERIAL PRIMARY KEY,
 journal_entry TEXT,
 journal_entry_date DATE,
 customer_id INT,
