@@ -49,7 +49,9 @@ CONSTRAINT fk_appointment_t
 
 CREATE TABLE journal (
 journal_id SERIAL PRIMARY KEY,
-journal_text TEXT
+journal_entry_id SERIAL,
+journal_entry TEXT,
+journal_entry_date TIMESTAMP
 );
 
 
