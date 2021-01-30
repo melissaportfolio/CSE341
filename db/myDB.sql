@@ -76,26 +76,3 @@ CONSTRAINT fk_journal
     FOREIGN KEY (journal_id) 
         REFERENCES journal(journal_id)
 );
-
-/*
-ALTER TABLE therapist
-ADD CONSTRAINT fk_appointment_t FOREIGN KEY (appointment_id) REFERENCES appointments(appointment_id);
-*/
-/*
-ALTER TABLE therapy_session
-ADD CONSTRAINT fk_article FOREIGN KEY (article_id) REFERENCES articles(article_id);
-*/
-/*
-ALTER TABLE appointments
-ADD CONSTRAINT fk_therapy_session FOREIGN KEY (therapy_session_id) REFERENCES therapy_session(therapy_session_id);
-*/
-/*
-ALTER TABLE customer
-ADD CONSTRAINT fk_therapist FOREIGN KEY (therapist_id) REFERENCES therapist(therapist_id);
-
-ALTER TABLE customer
-ADD CONSTRAINT fk_appointment_c FOREIGN KEY (appointment_id) REFERENCES appointments(appointment_id);
-
-ALTER TABLE customer
-ADD CONSTRAINT fk_journal FOREIGN KEY (journal_id) REFERENCES journal(journal_id);
-*/
