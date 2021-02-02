@@ -23,8 +23,8 @@ catch (PDOException $ex)
 
 foreach ($db->query('SELECT * FROM myDB.customer') as $row)
 {
-  echo 'customer first name: ' . $row['first_name'];
-  echo ' customer last name: ' . $row['last_name'];
+  echo 'customer: ' . $row['first_name'];
+  echo ' customerlastname: ' . $row['last_name'];
   echo '<br/>';
 }
 ?>
