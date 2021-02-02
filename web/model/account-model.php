@@ -20,4 +20,11 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
+
+foreach ($db->query('SELECT * FROM myDB.customer') as $row)
+{
+  echo 'customer first name: ' . $row['customer.first_name'];
+  echo ' customer last name: ' . $row['customer.last_name'];
+  echo '<br/>';
+}
 ?>
