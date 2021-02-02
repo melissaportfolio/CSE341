@@ -21,10 +21,10 @@ catch (PDOException $ex)
   die();
 }
 
-foreach ($db->query('SELECT * FROM myDB.customer') as $row)
+foreach ($db->query('SELECT first_name, last_name FROM myDB.customer') as $row)
 {
-  echo 'customer: ' . $row['first_name'];
-  echo ' customerlastname: ' . $row['last_name'];
+  echo 'first: ' . $row['first_name'];
+  echo ' last: ' . $row['last_name'];
   echo '<br/>';
 }
 ?>
