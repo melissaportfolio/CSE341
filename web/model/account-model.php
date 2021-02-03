@@ -28,6 +28,6 @@ foreach ($db->query('SELECT first_name, last_name FROM customer') as $row)
   echo ' last: ' . $row['last_name'];
   echo '<br/>';
 }
-return $db;
+
 }
 ?>
