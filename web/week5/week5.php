@@ -1,4 +1,7 @@
 <?php
+if(isset($_POST))   {
+    echo $_POST['search'];
+}
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -23,7 +26,7 @@ catch (PDOException $ex)
 
 foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures') as $row)
 {
-  $scripture .= $row['book'] . ' '. $row['chapter'] . ' '. $row['verse'] . ' - ' . $row['content'] . '<br>';
+  $scripture .= $row['book'] . ':' . ' '. $row['chapter'] . ' '. $row['verse'] . ' - ' . $row['content'] . '<br>';
 
 }
 ?><!DOCTYPE html>
@@ -36,5 +39,10 @@ foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures') as $
 <body>
     <h1>Scripture Resources</h1>
 <?=$scripture?>
+<form action="" method="post">
+    <input type="text" name="search">
+    <label name="search"></label>
+    <button type="submit" name="submitBtn">Submit</button>
+</form>
 </body>
 </html>
