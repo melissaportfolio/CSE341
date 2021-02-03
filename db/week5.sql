@@ -5,4 +5,4 @@ create table Scriptures (
     verse VARCHAR(255), 
     content VARCHAR(255));
 
-    INSERT INTO Scriptures
+  
