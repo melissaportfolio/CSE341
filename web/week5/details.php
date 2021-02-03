@@ -29,7 +29,7 @@ catch (PDOException $ex)
 
 foreach ($db->query($where) as $row)
 {
-  $scripture .= '<a href="details.php?id='.$row['id'].'">' . $row['book'] . ':' . ' '. $row['chapter'] . ' '. $row['verse'] . '</a><br>';
+  $scripture .= $row['id'].'">' . $row['book'] . ':' . ' '. $row['chapter'] . ' '. $row['verse'] . $row['content'] .'<br>';
 
 }?><!DOCTYPE html>
 <html lang="en">
@@ -39,6 +39,6 @@ foreach ($db->query($where) as $row)
     <title>Document</title>
 </head>
 <body>
-    
+    <?=$scripture?>
 </body>
 </html>
