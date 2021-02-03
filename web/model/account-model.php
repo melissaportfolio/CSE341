@@ -1,5 +1,5 @@
 <?php 
-function db_connect(){
+
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -29,5 +29,5 @@ foreach ($db->query('SELECT first_name, last_name FROM customer') as $row)
   echo '<br/>';
 }
 
-}
+
 ?>
