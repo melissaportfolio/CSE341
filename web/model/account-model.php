@@ -1,33 +1,26 @@
 <?php 
+function registerUser($customer_id, $first_name, $last_name, $street, $city, $state, $zip, $email, $password){
+    $db = get_db();
+    $sql = 'INSERT INTO customer (customer_id, first_name, last_name, street, city, state, zip, email, password)
+    VALUES(:customer_id, :first_name, :last_name, :street, :city, :state, :zip, :customer_email, :customer_password)';
 
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
+    $stmt = $db->prepare($sql);
 
-  $dbOpts = parse_url($dbUrl);
+    $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_STR);
+    $stmt->bindValue(':first_name', $first_name, PDO::PARAM_STR);
+    $stmt->bindValue(':last_name', $last_name, PDO::PARAM_STR);
+    $stmt->bindValue(':street', $street, PDO::PARAM_STR);
+    $stmt->bindValue(':city', $city, PDO::PARAM_STR);
+    $stmt->bindValue(':state', $state, PDO::PARAM_STR);
+    $stmt->bindValue(':zip', $zip, PDO::PARAM_INT);
+    $stmt->bindValue(':email', $email, PDO::PARAM_STR);
+    $stmt->bindValue(':password', $password, PDO::PARAM_STR);
 
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
+    $stmt->execute();
 
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $rowsChanged = $stmt->rowCount();
+    $stmt->closeCursor();
+    return $rowsChanged;
 }
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
-
-foreach ($db->query('SELECT first_name, last_name FROM customer') as $row)
-{
-  echo 'first: ' . $row['first_name'];
-  echo ' last: ' . $row['last_name'];
-  echo '<br/>';
-}
-
 
 ?>
