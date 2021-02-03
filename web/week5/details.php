@@ -2,9 +2,8 @@
 
 
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
-echo $id;
-exit;
-    // $where = "SELECT id, book, chapter, verse, content FROM Scriptures WHERE book = '".$_POST['search']."'";
+
+     $where = "SELECT id, book, chapter, verse, content FROM Scriptures WHERE id = '". $id ."'";
 
 try
 {
