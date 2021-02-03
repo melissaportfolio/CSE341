@@ -1,10 +1,10 @@
 <?php
 if(isset($_POST))   {
     echo $_POST['search'];
-    $where = "SELECT book, chapter, verse, content FROM Scriptures WHERE book = '".$_POST['search']."'";
+    $where = "SELECT id, book, chapter, verse, content FROM Scriptures WHERE book = '".$_POST['search']."'";
 } 
 else    {
-    $where = "SELECT book, chapter, verse, content FROM Scriptures";
+    $where = "SELECT id, book, chapter, verse, content FROM Scriptures";
 }
 try
 {
@@ -30,7 +30,7 @@ catch (PDOException $ex)
 
 foreach ($db->query($where) as $row)
 {
-  $scripture .= $row['book'] . ':' . ' '. $row['chapter'] . ' '. $row['verse'] . ' - ' . $row['content'] . '<br>';
+  $scripture .= '<a href="details.php?id='.$row['id'].'">' . $row['book'] . ':' . ' '. $row['chapter'] . ' '. $row['verse'] . '</a><br>';
 
 }
 ?><!DOCTYPE html>
