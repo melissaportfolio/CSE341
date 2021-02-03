@@ -1,6 +1,10 @@
 <?php
 if(isset($_POST))   {
     echo $_POST['search'];
+    $where = ' WHERE book = ' . $_POST['search'];
+} 
+else    {
+    $where = '';
 }
 try
 {
@@ -24,7 +28,7 @@ catch (PDOException $ex)
   die();
 }
 
-foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures') as $row)
+foreach ($db->query('SELECT book, chapter, verse, content FROM Scriptures'. $where) as $row)
 {
   $scripture .= $row['book'] . ':' . ' '. $row['chapter'] . ' '. $row['verse'] . ' - ' . $row['content'] . '<br>';
 
