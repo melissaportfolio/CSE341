@@ -1,11 +1,11 @@
 <?php
-if(isset($_POST))   {
-    echo $_POST['search'];
-    $where = 'SELECT book, chapter, verse, content FROM Scriptures WHERE book = "' . $_POST['search'].'"';
-} 
-else    {
+// if(isset($_POST))   {
+//     echo $_POST['search'];
+//     $where = 'SELECT book, chapter, verse, content FROM Scriptures WHERE book = "' . $_POST['search'].'"';
+// } 
+//else    {
     $where = 'SELECT book, chapter, verse, content FROM Scriptures';
-}
+//}
 try
 {
   $dbUrl = getenv('DATABASE_URL');
