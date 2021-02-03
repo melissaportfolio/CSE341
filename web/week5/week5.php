@@ -30,6 +30,7 @@ catch (PDOException $ex)
 
 foreach ($db->query($where) as $row)
 {
+    var_dump($row);
   $scripture .= '<a href="details.php?id='.$row['id'].'">' . $row['book'] . ':' . ' '. $row['chapter'] . ' '. $row['verse'] . '</a><br>';
 
 }
