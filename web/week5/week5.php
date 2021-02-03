@@ -1,11 +1,11 @@
 <?php
-// if(isset($_POST))   {
-//     echo $_POST['search'];
-//     $where = 'SELECT book, chapter, verse, content FROM Scriptures WHERE book = "' . $_POST['search'].'"';
-// } 
-//else    {
-    $where = 'SELECT book, chapter, verse, content FROM Scriptures';
-//}
+if(isset($_POST))   {
+    echo $_POST['search'];
+    $where = "SELECT book, chapter, verse, content FROM Scriptures WHERE book = 'John'";
+} 
+else    {
+    $where = "SELECT book, chapter, verse, content FROM Scriptures";
+}
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -45,7 +45,7 @@ foreach ($db->query($where) as $row)
 <?=$scripture?>
 <form action="" method="post">
     <input type="text" name="search">
-    <label name="search"></label>
+    <label for="search"></label>
     <button type="submit" name="submitBtn">Submit</button>
 </form>
 </body>
