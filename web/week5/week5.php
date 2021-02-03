@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST))   {
     echo $_POST['search'];
-    $where = ' WHERE book = ' . $_POST['search'];
+    $where = ' WHERE book = "' . $_POST['search'].'"';
 } 
 else    {
     $where = '';
