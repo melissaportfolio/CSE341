@@ -50,8 +50,8 @@ street VARCHAR(60),
 city VARCHAR(60),
 state VARCHAR(8),
 zip INT,
-customer_email VARCHAR(30),
-customer_password VARCHAR(10)
+-- customer_email VARCHAR(30),
+-- customer_password VARCHAR(10)
 );
 
 CREATE TABLE journal (
