@@ -54,7 +54,7 @@ foreach ($db->query($where) as $row)
     </nav>
     <br><br><br>
 <h2>Patient List</h2>
-<?=$patient?>
+<?php echo $patient?>
 <form action="admin-patient-details.php" method="post">
     <input type="text" name="search">
     <label for="search"></label>
