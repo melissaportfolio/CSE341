@@ -1,16 +1,16 @@
 <?php session_start();
-if(isset($_SESSION)) {
-    $patientInfo = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer";
-}
+// if(isset($_SESSION)) {
+//     $patientInfo = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer";
+// }
 
 if(isset($_POST))   {
     echo $_POST['search'];
     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE first_name OR last_name = '".$_POST['search']."'";
 } 
-elseif(isset($_POST)) {
-    echo $_POST['search2'];
-    $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE last_name = '".$_POST['search2']."'";
-}
+// elseif(isset($_POST)) {
+//     echo $_POST['search2'];
+//     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE last_name = '".$_POST['search2']."'";
+// }
 else    {
     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer";
 }
