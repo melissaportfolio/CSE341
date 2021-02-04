@@ -54,12 +54,15 @@ foreach ($db->query($where) as $row)
     </nav>
     <br><br><br>
 <h2>Patient List</h2>
-<?php echo $patient?>
+
 <form action="" method="post">
     <input type="text" name="search">
     <label for="search"></label>
     <button type="submit" name="submitBtn">Search</button>
 </form>
+
+<?php if(isset($patient)){ 
+		echo "$patient";}?>
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
