@@ -40,8 +40,8 @@ foreach ($db->query($where) as $row)
   . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] 
   . ' ' . $row['state'] . ' ' . $row['zip'] . '</a><br>';
     echo 'first: ' . $row['first_name'];
-  echo ' last: ' . $row['last_name'];
-  echo '<br/>';
+    echo ' last: ' . $row['last_name'];
+    echo '<br/>';
 }
 // foreach ($db->query('SELECT first_name, last_name FROM customer') as $row)
 // {
