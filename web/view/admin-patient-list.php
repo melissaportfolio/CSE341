@@ -32,7 +32,7 @@ catch (PDOException $ex)
 foreach ($db->query($where) as $row)
 {
     var_dump($row);
-  $patient .= '<a href="admin-patient-details.php?id='.$row['customer_id'].'">' . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] . ' ' . $row['state'] . ' ' . $row['zip'] . '</a><br>';
+  $patient .= '<a href="admin-patient-details.php?customer_id='.$row['customer_id'].'">' . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] . ' ' . $row['state'] . ' ' . $row['zip'] . '</a><br>';
 
 }
 

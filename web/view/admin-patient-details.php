@@ -30,7 +30,7 @@ catch (PDOException $ex)
 
 foreach ($db->query($where) as $row)
 {
-    $patient .= $row['customer_id'] . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] . ' ' . $row['state'] . ' ' . $row['zip'] . '<br>';
+    $patient .= $row['customer_id'] . ' ' . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] . ' ' . $row['state'] . ' ' . $row['zip'] . '<br>';
 
 }?><!DOCTYPE html>
 <html lang="en">
