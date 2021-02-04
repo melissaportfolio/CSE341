@@ -1,7 +1,7 @@
 <?php session_start();
 if(isset($_POST))   {
     echo $_POST['search'];
-    $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE last_name = '".$_POST['search']."'";
+    $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE first_name = '".$_POST['search']."'";
 } 
 
 else    {
