@@ -82,10 +82,11 @@ foreach ($db->query($where) as $row)
 <!-- <?php if(isset($patient)){ 
         echo "$patient";}?> -->
         
-        <?php
-         echo 'first: ' . $row['first_name'];
-         echo ' last: ' . $row['last_name'];
+        <?php if(isset($row)){
+         echo 'First Name: ' . $row['first_name'] . '<br>';
+         echo 'Last Name: ' . $row['last_name'];
          echo '<br/>';
+        }
         ?>
 
     <footer>
