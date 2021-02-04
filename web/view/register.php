@@ -18,7 +18,7 @@
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-<h2>Therapy options</h2>
+<h2>Register with Namaste Therapy</h2>
 
 
 <form method="post" action="#">
