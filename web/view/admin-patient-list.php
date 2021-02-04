@@ -39,9 +39,9 @@ catch (PDOException $ex)
 foreach ($db->query($where) as $row)
 {
      var_dump($row);
-  $patient .= '<a href="admin-patient-details.php?customer_id='.$row['customer_id'].'">' 
-  . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] 
-  . ' ' . $row['state'] . ' ' . $row['zip'] . '</a><br>';
+//   $patient .= '<a href="admin-patient-details.php?customer_id='.$row['customer_id'].'">' 
+//   . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] 
+//   . ' ' . $row['state'] . ' ' . $row['zip'] . '</a><br>';
     echo 'first: ' . $row['first_name'];
     echo ' last: ' . $row['last_name'];
     echo '<br/>';
@@ -77,11 +77,11 @@ foreach ($db->query($where) as $row)
     <label for="search"></label>
     <button type="submit" name="submitBtn">Search by First Name</button>
 </form>
-<form action="" method="post">
+<!-- <form action="" method="post">
     <input type="text" name="search2">
     <label for="search2"></label>
     <button type="submit" name="submitBtn2">Search by Last Name</button>
-</form>
+</form> -->
 
 <?php if(isset($patientInfo)){ 
         echo "$patientInfo";}?>
