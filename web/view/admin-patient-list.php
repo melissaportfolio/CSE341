@@ -1,4 +1,4 @@
-<?php session_start();
+<?php //session_start();
 // if(isset($_SESSION)) {
 //     $patientInfo = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer";
 // }
