@@ -35,9 +35,9 @@ foreach ($db->query($where) as $row)
 //   $patient .= '<a href="admin-patient-details.php?customer_id='.$row['customer_id'].'">' 
 //   . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] 
 //   . ' ' . $row['state'] . ' ' . $row['zip'] . '</a><br>';
-    echo 'first: ' . $row['first_name'];
-  echo ' last: ' . $row['last_name'];
-  echo '<br/>';
+//     echo 'first: ' . $row['first_name'];
+//   echo ' last: ' . $row['last_name'];
+//   echo '<br/>';
 }
 // foreach ($db->query('SELECT first_name, last_name FROM customer') as $row)
 // {
@@ -71,8 +71,14 @@ foreach ($db->query($where) as $row)
     <button type="submit" name="submitBtn">Search</button>
 </form>
 
-<?php if(isset($patient)){ 
-		echo "$patient";}?>
+<!-- <?php if(isset($patient)){ 
+        echo "$patient";}?> -->
+        
+        <?php
+         echo 'first: ' . $row['first_name'];
+         echo ' last: ' . $row['last_name'];
+         echo '<br/>';
+        ?>
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
