@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 
 $id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
