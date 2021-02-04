@@ -1,12 +1,10 @@
-<?php session_start();
-if(isset($_POST))   {
-    echo $_POST['search'];
-    $where = "SELECT customer_id, first_name, last_name, street, city, zip FROM customer WHERE last_name = '".$_POST['search']."'";
-} 
+<?php
 
-else    {
-    $where = "SELECT customer_id, first_name, last_name, street, city, zip FROM customer";
-}
+
+$id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
+
+     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE id = '". $id ."'";
+
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -31,17 +29,14 @@ catch (PDOException $ex)
 
 foreach ($db->query($where) as $row)
 {
-    var_dump($row);
-  $patient .= '<a href="details.php?id='.$row['id'].'">' . $row['book'] . ':' . ' '. $row['chapter'] . ' '. $row['verse'] . '</a><br>';
+    $patient .= '<a href="admin-patient-details.php?id='.$row['customer_id'].'">' . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] . ' ' . $row['state'] . ' ' . $row['zip'] . '</a><br>';
 
-}
-
-?><!DOCTYPE html>
+}?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Namaste Therapy</title>
+    <title>Patient Details | Namaste Therapy</title>
     <link rel="stylesheet" href="../css/therapy.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -53,13 +48,8 @@ foreach ($db->query($where) as $row)
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-<h2>Patient List</h2>
+<h2>Patient Details</h2>
 <?=$patient?>
-<form action="" method="post">
-    <input type="text" name="search">
-    <label for="search"></label>
-    <button type="submit" name="submitBtn">Search</button>
-</form>
 
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>

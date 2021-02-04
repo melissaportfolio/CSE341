@@ -41,7 +41,7 @@ foreach ($db->query($where) as $row)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Namaste Therapy</title>
+    <title>Patient List | Namaste Therapy</title>
     <link rel="stylesheet" href="../css/therapy.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
