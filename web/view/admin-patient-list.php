@@ -1,4 +1,5 @@
 <?php session_start();
+$patientInfo = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer";
 if(isset($_POST))   {
     echo $_POST['search'];
     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE first_name = '".$_POST['search']."'";
@@ -79,8 +80,8 @@ foreach ($db->query($where) as $row)
     <button type="submit" name="submitBtn2">Search by Last Name</button>
 </form>
 
-<!-- <?php if(isset($patient)){ 
-        echo "$patient";}?> -->
+<?php if(isset($patientInfo)){ 
+        echo "$patientInfo";}?>
         
         <?php if(isset($row)){
          echo 'First Name: ' . $row['first_name'] . '<br>';
