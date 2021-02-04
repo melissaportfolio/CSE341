@@ -3,7 +3,10 @@ if(isset($_POST))   {
     echo $_POST['search'];
     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE first_name = '".$_POST['search']."'";
 } 
-
+elseif(isset($_POST)) {
+    echo $_POST['search2'];
+    $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE last_name = '".$_POST['search2']."'";
+}
 else    {
     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer";
 }
@@ -68,7 +71,12 @@ foreach ($db->query($where) as $row)
 <form action="" method="post">
     <input type="text" name="search">
     <label for="search"></label>
-    <button type="submit" name="submitBtn">Search</button>
+    <button type="submit" name="submitBtn">Search by First Name</button>
+</form>
+<form action="" method="post">
+    <input type="text" name="search2">
+    <label for="search2"></label>
+    <button type="submit" name="submitBtn2">Search by Last Name</button>
 </form>
 
 <!-- <?php if(isset($patient)){ 
