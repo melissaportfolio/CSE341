@@ -31,10 +31,20 @@ catch (PDOException $ex)
 
 foreach ($db->query($where) as $row)
 {
-    var_dump($row);
-  $patient .= '<a href="admin-patient-details.php?customer_id='.$row['customer_id'].'">' . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] . ' ' . $row['state'] . ' ' . $row['zip'] . '</a><br>';
-
+     var_dump($row);
+//   $patient .= '<a href="admin-patient-details.php?customer_id='.$row['customer_id'].'">' 
+//   . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] 
+//   . ' ' . $row['state'] . ' ' . $row['zip'] . '</a><br>';
+    echo 'first: ' . $row['first_name'];
+  echo ' last: ' . $row['last_name'];
+  echo '<br/>';
 }
+// foreach ($db->query('SELECT first_name, last_name FROM customer') as $row)
+// {
+//   echo 'first: ' . $row['first_name'];
+//   echo ' last: ' . $row['last_name'];
+//   echo '<br/>';
+// }
 
 ?><!DOCTYPE html>
 <html lang="en">
