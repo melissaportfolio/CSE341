@@ -6,14 +6,14 @@ if(isset($_POST))   {
     echo $_POST['search'];
     $search = $_POST['search'];
     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE first_name = :search OR last_name = :search";
-    $stmt = $db->prepare($sql);
+    $stmt = $db->prepare($where);
     $stmt->bindValue(':search', $search, PDO::PARAM_STR);
     $stmt->execute();
 } 
 
 else    {
     $patientInfo = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer";
-    $stmt = $db->prepare($sql);
+    $stmt = $db->prepare($patientInfo);
     $stmt->execute();
 }
 
