@@ -71,14 +71,6 @@ foreach ($db->query($where) as $row)
     <label for="search"></label>
     <button type="submit" name="submitBtn">Search by First Name</button>
 </form>
-<!-- <form action="" method="post">
-    <input type="text" name="search2">
-    <label for="search2"></label>
-    <button type="submit" name="submitBtn2">Search by Last Name</button>
-</form> -->
-
-<?php if(isset($patientInfo)){ 
-        echo "$patientInfo";}?>
         
         <?php if(isset($row)){
          echo 'First Name: ' . $row['first_name'] . '<br>';
