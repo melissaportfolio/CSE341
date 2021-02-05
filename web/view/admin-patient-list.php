@@ -1,33 +1,20 @@
 <?php 
+include '../library/dbConnect.php';
+$db = get_db();
 
 if(isset($_POST))   {
     echo $_POST['search'];
-    $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE first_name = '".$_POST['search']."'";
+    $search = $_POST['search'];
+    $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE first_name = :search OR last_name = :search";
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':search', $search, PDO::PARAM_STR);
+    $stmt->execute();
 } 
 
 else    {
-    $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer";
-}
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
-
-  $dbOpts = parse_url($dbUrl);
-
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
-
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
+    $patientInfo = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer";
+    $stmt = $db->prepare($sql);
+    $stmt->execute();
 }
 
 foreach ($db->query($where) as $row)
@@ -72,11 +59,15 @@ foreach ($db->query($where) as $row)
     <button type="submit" name="submitBtn">Search by First Name</button>
 </form>
         
-        <?php if(isset($row)){
-         echo 'First Name: ' . $row['first_name'] . '<br>';
-         echo 'Last Name: ' . $row['last_name'];
-         echo '<br/>';
+        <?php 
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+
+            echo 'First Name: ' . $row['first_name'] . '<br>';
+            echo 'Last Name: ' . $row['last_name'];
+            echo '<br/>';
         }
+        
+      
         ?>
 
     <footer>
