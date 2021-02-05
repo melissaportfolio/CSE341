@@ -1,32 +1,33 @@
 <?php
-session_start();
+include '../library/dbConnect.php';
+$db = get_db();
 
 
-$id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
+// $id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
-     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE customer_id = '". $id ."'";
+//      $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE customer_id = '". $id ."'";
 
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
+// try
+// {
+//   $dbUrl = getenv('DATABASE_URL');
 
-  $dbOpts = parse_url($dbUrl);
+//   $dbOpts = parse_url($dbUrl);
 
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
+//   $dbHost = $dbOpts["host"];
+//   $dbPort = $dbOpts["port"];
+//   $dbUser = $dbOpts["user"];
+//   $dbPassword = $dbOpts["pass"];
+//   $dbName = ltrim($dbOpts["path"],'/');
 
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+//   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
+//   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// }
+// catch (PDOException $ex)
+// {
+//   echo 'Error!: ' . $ex->getMessage();
+//   die();
+// }
 
 foreach ($db->query($where) as $row)
 {
