@@ -62,7 +62,7 @@ else    {
         <?php 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 
-            echo 'First Name: ' . $row['first_name'] . '<br>';
+            echo '<a href="admin-patient-details.php?customer_id="' . 'First Name: ' . $row['first_name'] . '</a><br>';
             echo 'Last Name: ' . $row['last_name'] . '<br>';
             echo '<br/>';
         }
