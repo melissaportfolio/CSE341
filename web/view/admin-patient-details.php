@@ -3,9 +3,9 @@ include '../library/dbConnect.php';
 $db = get_db();
 
 
-// $id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
+$id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
-//      $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE customer_id = '". $id ."'";
+     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE customer_id = '". $id ."'";
 
 try
 {
