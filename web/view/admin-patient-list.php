@@ -56,15 +56,15 @@ else    {
 <form action="" method="post">
     <input type="text" name="search">
     <label for="search"></label>
-    <button type="submit" name="submitBtn">Search by First Name</button>
+    <button type="submit" name="submitBtn">Search</button>
 </form>
         
         <?php 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 
             echo "<a href='admin-patient-details.php?customer_id=" . strval($row['customer_id']) . "&'" . "First Name: " . $row['first_name'] . "</a><br>";
-            echo $row['first_name'] . $row['last_name'] . '<br>';
-            echo '<br/>';
+            echo $row['first_name'] . ' ' . $row['last_name'] . '<br>';
+
         }
         
       
