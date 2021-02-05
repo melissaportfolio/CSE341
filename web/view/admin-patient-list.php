@@ -2,7 +2,7 @@
 include '../library/dbConnect.php';
 $db = get_db();
 
-if(isset($_POST))   {
+if(isset($_POST['search']))   {
     echo $_POST['search'];
     $search = $_POST['search'];
     $where = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE first_name = :search OR last_name = :search";
@@ -63,7 +63,7 @@ else    {
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 
             echo 'First Name: ' . $row['first_name'] . '<br>';
-            echo 'Last Name: ' . $row['last_name'];
+            echo 'Last Name: ' . $row['last_name'] . '<br>';
             echo '<br/>';
         }
         
