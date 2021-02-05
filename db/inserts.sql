@@ -31,6 +31,20 @@ INSERT INTO customer(first_name, last_name, street, city, state, zip)
 VALUES ('Ellie', 'Jackson', '123 Golden Street', 'Provo', 'UT', '84606'),
 ('Nathan', 'Anderson', '345 Maple Drive', 'Provo', 'UT', '84606');
 
+INSERT INTO customer(first_name, last_name, street, city, state, zip)
+VALUES ('Melanie', 'Hansen', '555 Eagle Blvd', 'Orem', 'UT', '84058'),
+('Soraya', 'Tazmin', '913 W April Street', 'Orem', 'UT', '84058'),
+('Braxton', 'McDougal', '8342 N 200 W', 'Lehi', 'UT', '84043'),
+('Juana', 'Lopez-Sanchez', '322 S 4000 W', 'Lehi', 'UT', '84043'),
+('Caitlyn', 'Nakai', '459 W 200 N', 'Pleasant Grove', 'UT', '84062'),
+('Daniel', 'Larson', '1491 Apple Blossom Way', 'Orem', 'UT', '84058'),
+('Tammy', 'Thompson', '6694 E 200 S', 'Provo', 'UT', '84606'),
+('Greyson', 'Jex', '731 Fort St', 'Orem', 'UT', '84058'),
+('Manuel', 'Rosas', '822 W 300 N', 'American Fork', 'UT', '84003'),
+('David', 'Thornton', '1010 W 235 N', 'Provo', 'UT', '84606'),
+('Jonathan', 'Hamilton', '730 E Harper Street', 'Orem', 'UT', '84058'),
+('Maxine', 'Jones', '334 Archway Cove', 'American Fork', 'UT', '84003');
+
 INSERT INTO journal(journal_entry, journal_entry_date, customer_id)
 VALUES ('Today was a good day.', '2021-01-01', (SELECT customer_id FROM customer WHERE customer_id = 1)),
 ('Today was another good day.', '2021-01-02', (SELECT customer_id FROM customer WHERE customer_id = 1)),
