@@ -54,8 +54,9 @@ else    {
 <h2>Patient List</h2>
 
 <form action="" method="post">
+<label for="search">Search by First or Last Name</label><br>
     <input type="text" name="search">
-    <label for="search">Search by First or Last Name</label>
+    
     <button type="submit" name="submitBtn">Search</button>
 </form>
         
