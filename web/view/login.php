@@ -18,26 +18,19 @@
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-<h2>Register with Namaste Therapy</h2>
+<h2>Sign In</h2>
 
 
-<form method="post" action="#">
-
-                
-<label for="first_name">First name:</label><br>
-<input type="text" name="first_name" id="first_name" <?php if(isset($first_name)){echo "value='$first_name'";}  ?> required><br>
-<label for="last_name">Last name:</label><br>
-<input type="text" name="last_name" id="last_name" <?php if(isset($last_name)){echo "value='$last_name'";}  ?> required><br><br>
-<label for="email">Email:</label><br>
-<input type="email" name="clientEmail" id="email" <?php if(isset($email)){echo "value='$email'";}  ?> required><br><br>
-<label for="password">Password:</label><br>
-<span>*Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character</span> <br><br>
-<input type="password" name="password" id="password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required><br><br>
-<input type="submit" value="Register"><br><br>
-<!-- Add the action name - value pair -->
-<input type="hidden" name="action" value="register-1">
-<a class="form-link" href="#" title="login or register with Namaste Therapy" id="account-register">Already have an account?</a>
-</form>
+            <form action="/phpmotors/accounts/" method="post">
+                <label for="email">Email:</label><br>
+                <input type="email" name="clientEmail" id="email" <?php if(isset($clientEmail)){echo "value='$clientEmail'";}  ?> required><br><br>
+                <label for="password">Password:</label><br>
+                <!-- <span>*Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character</span> <br><br> -->
+                <input type="password" name="clientPassword" id="password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required><br><br>
+                <input type="submit" name="action" value="Sign In"><br><br>
+                <input type="hidden" name="action" value="Login">
+                <a class="form-link" href="/web/controller/accounts.php?action=register" title="login or register" id="account-new">Not a member yet?</a>
+            </form>
 
 
     <footer>
