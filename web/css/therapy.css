@@ -115,15 +115,15 @@ a:hover {
     padding: 20px;
 }
 
-.banner1 {
+.quote1, .quote2, .quote3, .quote4, .quote5, .quote6, .quote7 {
     display: none;
 }
 
-#banner1 {
-    background-color: #e59500;
-    color: #0d1321;
+.banner1 {
+    background-color: teal;
+    color: black;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lora', serif;
     padding: 15px;
     font-size: 20px;
     display: block;
