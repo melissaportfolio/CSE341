@@ -19,7 +19,7 @@
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-    <aside class="banner" class="banner1">Every journey begins with a single step
+    <aside id="banner1" class="banner1">Every journey begins with a single step
     </aside>
 
     <h2>Come work with us at Namaste Therapy</h2>
