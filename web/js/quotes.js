@@ -8,23 +8,23 @@ var d = new Date();
 var currentday = d.getDay();
 switch (currentday) {
     case 0:
-      day = "Sunday";
+      quote = document.getElementsByClassName("quote1")[0].classList.toggle("banner1");
       break;
     case 1:
-      day = "Monday";
+      quote = document.getElementsByClassName("quote2")[0].classList.toggle("banner1");
       break;
     case 2:
-       day = "Tuesday";
+      quote = document.getElementsByClassName("quote3")[0].classList.toggle("banner1");
       break;
     case 3:
-      day = "Wednesday";
+      quote = document.getElementsByClassName("quote4")[0].classList.toggle("banner1");
       break;
     case 4:
-      day = "Thursday";
+      quote = document.getElementsByClassName("quote5")[0].classList.toggle("banner1");
       break;
     case 5:
-      day = "Friday";
+      quote = document.getElementsByClassName("quote6")[0].classList.toggle("banner1");
       break;
     case 6:
-      day = document.getElementsByClassName("quote1")[0].classList.toggle("banner1");
+      quote = document.getElementsByClassName("quote7")[0].classList.toggle("banner1");
   }

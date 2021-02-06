@@ -20,6 +20,12 @@
     </nav>
     <br><br><br>
     <aside class="quote1">Every journey begins with a single step</aside>
+    <aside class="quote2">Keep moving forward one day at a time</aside>
+    <aside class="quote3">Change doesn't happen in an instant. Gradual steps forward bring about change over time. </aside>
+    <aside class="quote4">Faith in yourself makes all the difference</aside>
+    <aside class="quote5">You don't have to find yourself because you aren't lost. What you need is self-acceptance.</aside>
+    <aside class="quote6">Each day is a new beginning. A chance to start again on a clean slate.</aside>
+    <aside class="quote7">Love, laughter, and friendship are the best forms of therapy</aside>
 
     <h2>Come work with us at Namaste Therapy</h2>
     <div class="home-grid">
