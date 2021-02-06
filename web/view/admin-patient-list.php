@@ -55,7 +55,7 @@ else    {
 
 <form action="" method="post">
     <input type="text" name="search">
-    <label for="search"></label>
+    <label for="search">Search by First or Last Name</label>
     <button type="submit" name="submitBtn">Search</button>
 </form>
         
