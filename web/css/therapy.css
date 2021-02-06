@@ -134,9 +134,11 @@ a:hover {
 @keyframes quotes {
     from {
         color: aquamarine;
+        font-size: 10px;
     }
 
     to {
         color: azure;
+        font-size: 20px;
     }
 }
