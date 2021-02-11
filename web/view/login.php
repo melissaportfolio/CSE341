@@ -16,7 +16,7 @@ echo 'If one';
  if ($password == $_GET['password']) { 
     echo 'If two';
     var_dump($_SESSION);
- $_SESSION['user'] = $result['customer_id'];
+ $_SESSION['user'] = $result[0]['customer_id'];
  header('Location: admin.php');
  }
 }
