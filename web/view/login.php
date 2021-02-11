@@ -2,7 +2,7 @@
 require '../library/dbConnect.php';
 $db = get_db();
 if(isset($_POST['email'])){
-echo 'If one';
+//echo 'If one';
  $email = $_POST['email'];
  $result = $db->query("SELECT customer_id, email, password FROM customer WHERE email = '$email'");
 
@@ -10,8 +10,8 @@ echo 'If one';
  $email = $result[0]['email'];
  $password = $result[0]['password'];
 
- echo 'DB password' . $password;
- echo 'get password' . $_POST['password'];
+//  echo 'DB password' . $password;
+//  echo 'get password' . $_POST['password'];
 
  if ($password == $_POST['password']) { 
     // echo 'If two';
