@@ -1,5 +1,6 @@
 <?php session_start();
-
+require '../library/dbConnect.php';
+$db = get_db();
 if(isset($_POST['email'])){
  $email = $_POST['email'];
  $result = $db->query("SELECT customer_id, email, password FROM customer WHERE email = '$email'");
