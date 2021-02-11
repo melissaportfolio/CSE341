@@ -9,6 +9,9 @@ echo 'If one';
  $customerId = $row['customer_id'];
  $email = $row['email'];
  $password = $row['password'];
+
+ echo $password;
+ echo $_GET['password'];
  
  if ($password == $_GET['password']) { 
     echo 'If two';
