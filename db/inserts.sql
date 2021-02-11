@@ -51,3 +51,12 @@ VALUES ('Today was a good day.', '2021-01-01', (SELECT customer_id FROM customer
 ('Third good day in a row.', '2021-01-03', (SELECT customer_id FROM customer WHERE customer_id = 1)),
 ('Feeling kind of anxious today.', '2020-12-31', (SELECT customer_id FROM customer WHERE customer_id = 2)),
 ('Had a hard time sleeping.', '2021-01-02', (SELECT customer_id FROM customer WHERE customer_id = 2));
+
+ALTER TABLE customer
+ADD email VARCHAR(50);
+
+ALTER TABLE customer
+ADD password VARCHAR(50);
+
+INSERT INTO customer(first_name, last_name, street, city, state, zip, email, password)
+VALUES('Admin', 'User', '555 Main St', 'Provo', 'UT', '84606', 'admin@namaste.com', 'Admin1234!');

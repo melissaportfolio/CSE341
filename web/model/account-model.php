@@ -2,7 +2,7 @@
 function registerUser($customer_id, $first_name, $last_name, $street, $city, $state, $zip, $email, $password){
     $db = get_db();
     $sql = 'INSERT INTO customer (customer_id, first_name, last_name, street, city, state, zip, email, password)
-    VALUES(:customer_id, :first_name, :last_name, :street, :city, :state, :zip, :customer_email, :customer_password)';
+    VALUES(:customer_id, :first_name, :last_name, :street, :city, :state, :zip, :email, :password)';
 
     $stmt = $db->prepare($sql);
 
@@ -23,4 +23,23 @@ function registerUser($customer_id, $first_name, $last_name, $street, $city, $st
     return $rowsChanged;
 }
 
+   //Check for existing email address
+   function checkExistingEmail($email) {
+    $db =  get_db();
+    $sql = 'SELECT email FROM customer WHERE email = :email';
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':email', $email, PDO::PARAM_STR);
+    $stmt->execute();
+    $matchEmail = $stmt->fetch(PDO::FETCH_NUM);
+    $stmt->closeCursor();
+    if(empty($matchEmail)){
+        return 0;
+        // echo 'Nothing found';
+        // exit;
+       } else {
+        return 1;
+        // echo 'Match found';
+        // exit;
+       }
+   }
 ?>
