@@ -11,10 +11,10 @@ require_once '../model/account-model.php';
 
 
 
-$action = filter_input(INPUT_POST, 'action');
-if ($action == NULL) {
-  $action = filter_input(INPUT_GET, 'action');
-}
+// $action = filter_input(INPUT_POST, 'action');
+// if ($action == NULL) {
+//   $action = filter_input(INPUT_GET, 'action');
+// }
 switch ($action) {
   case 'login-page':
     include '../view/login.php';
