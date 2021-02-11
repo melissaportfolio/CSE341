@@ -18,6 +18,7 @@ echo 'If one';
     var_dump($_SESSION);
  $_SESSION['user'] = $result[0]['customer_id'];
  header('Location: admin.php');
+ exit;
  }
 }
 
