@@ -1,5 +1,20 @@
 <?php session_start();
 
+if(isset($_POST['email'])){
+ $email = $_POST['email'];
+ $result = $db->query("SELECT customer_id, email, password FROM customer WHERE email = '$email'");
+
+ $customerId = $row['customer_id'];
+ $email = $row['email'];
+ $password = $row['password'];
+ 
+ if ($password == $_POST['password']) { 
+ $_SESSION['user'] = $row['customer_id'];
+ header('Location: admin.php');
+ }
+}
+
+
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -21,12 +36,12 @@
 <h2>Sign In</h2>
 
 
-            <form action="/phpmotors/accounts/" method="post">
+            <form action="" method="post">
                 <label for="email">Email:</label><br>
-                <input type="email" name="clientEmail" id="email" <?php if(isset($clientEmail)){echo "value='$clientEmail'";}  ?> required><br><br>
+                <input type="email" name="email" id="email" <?php if(isset($email)){echo "value='$email'";}  ?> required><br><br>
                 <label for="password">Password:</label><br>
                 <!-- <span>*Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character</span> <br><br> -->
-                <input type="password" name="clientPassword" id="password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required><br><br>
+                <input type="password" name="password" id="password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required><br><br>
                 <input type="submit" name="action" value="Sign In"><br><br>
                 <input type="hidden" name="action" value="Login">
                 <a class="form-link" href="/web/controller/accounts.php?action=register" title="login or register" id="account-new">Not a member yet?</a>
