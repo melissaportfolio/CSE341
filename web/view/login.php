@@ -1,9 +1,9 @@
 <?php session_start();
 require '../library/dbConnect.php';
 $db = get_db();
-if(isset($_GET['email'])){
+if(isset($_POST['email'])){
 echo 'If one';
- $email = $_GET['email'];
+ $email = $_POST['email'];
  $result = $db->query("SELECT customer_id, email, password FROM customer WHERE email = '$email'");
 
  $customer_id = $result[0]['customer_id'];
@@ -11,9 +11,9 @@ echo 'If one';
  $password = $result[0]['password'];
 
  echo 'DB password' . $password;
- echo 'get password' . $_GET['password'];
+ echo 'get password' . $_POST['password'];
 
- if ($password == $_GET['password']) { 
+ if ($password == $_POST['password']) { 
     echo 'If two';
     var_dump($_SESSION);
  $_SESSION['user'] = $result[0]['customer_id'];
@@ -44,7 +44,7 @@ echo 'If one';
 <h2>Sign In</h2>
 
 
-            <form action="" method="get">
+            <form action="admin-patient-list.php" method="post">
                 <label for="email">Email:</label><br>
                 <input type="email" name="email" id="email" <?php if(isset($email)){echo "value='$email'";}  ?> required><br><br>
                 <label for="password">Password:</label><br>
