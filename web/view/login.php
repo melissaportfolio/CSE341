@@ -1,15 +1,18 @@
 <?php session_start();
 require '../library/dbConnect.php';
 $db = get_db();
-if(isset($_POST['email'])){
- $email = $_POST['email'];
+if(isset($_GET['email'])){
+echo 'If one';
+ $email = $_GET['email'];
  $result = $db->query("SELECT customer_id, email, password FROM customer WHERE email = '$email'");
 
  $customerId = $row['customer_id'];
  $email = $row['email'];
  $password = $row['password'];
  
- if ($password == $_POST['password']) { 
+ if ($password == $_GET['password']) { 
+    echo 'If two';
+    var_dump($_SESSION);
  $_SESSION['user'] = $row['customer_id'];
  header('Location: admin.php');
  }
@@ -37,7 +40,7 @@ if(isset($_POST['email'])){
 <h2>Sign In</h2>
 
 
-            <form action="" method="post">
+            <form action="" method="get">
                 <label for="email">Email:</label><br>
                 <input type="email" name="email" id="email" <?php if(isset($email)){echo "value='$email'";}  ?> required><br><br>
                 <label for="password">Password:</label><br>
