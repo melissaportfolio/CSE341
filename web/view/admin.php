@@ -53,8 +53,10 @@ else    {
     <br><br><br>
 <h2>Admin Page</h2>
 
-<p>View and update information:</p>
-<a href="/web/controller/accounts.php?action=acctinfo">Update Account Information</a>
+
+
+<a class="link" href="admin-patient-list.php">View Patients</a><br><br>
+
 
 
     <footer>

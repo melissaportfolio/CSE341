@@ -14,15 +14,18 @@ echo 'If one';
  echo 'get password' . $_POST['password'];
 
  if ($password == $_POST['password']) { 
-    echo 'If two';
-    var_dump($_SESSION);
+    // echo 'If two';
+    // var_dump($_SESSION);
  $_SESSION['user'] = $result[0]['customer_id'];
- header('Location: admin.php');
- exit;
+//  header('Location: admin.php');
+//  exit;
  }
 }
 
-
+if ($_SESSION['user']['email'] == 'admin@namaste.com') {
+    header('location: admin.php');
+    exit;
+   }
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -44,7 +47,7 @@ echo 'If one';
 <h2>Sign In</h2>
 
 
-            <form action="admin-patient-list.php" method="post">
+            <form action="" method="post">
                 <label for="email">Email:</label><br>
                 <input type="email" name="email" id="email" <?php if(isset($email)){echo "value='$email'";}  ?> required><br><br>
                 <label for="password">Password:</label><br>
