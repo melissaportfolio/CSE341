@@ -6,9 +6,9 @@ echo 'If one';
  $email = $_GET['email'];
  $result = $db->query("SELECT customer_id, email, password FROM customer WHERE email = '$email'");
 
- $customerId = $result[0]['customer_id'];
- $email = $result[0]['email'];
- $password = $result[0]['password'];
+ $customerId = $result['customer_id'];
+ $email = $result['email'];
+ $password = $result['password'];
 
  echo 'DB password' . $password;
  echo 'get password' . $_GET['password'];
@@ -16,7 +16,7 @@ echo 'If one';
  if ($password == $_GET['password']) { 
     echo 'If two';
     var_dump($_SESSION);
- $_SESSION['user'] = $result[0]['customer_id'];
+ $_SESSION['user'] = $result['customer_id'];
  header('Location: admin.php');
  exit;
  }
