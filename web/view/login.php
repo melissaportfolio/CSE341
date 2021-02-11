@@ -10,9 +10,9 @@ echo 'If one';
  $email = $row['email'];
  $password = $row['password'];
 
- echo $password;
- echo $_GET['password'];
- 
+ echo 'DB password' . $password;
+ echo 'get password' . $_GET['password'];
+
  if ($password == $_GET['password']) { 
     echo 'If two';
     var_dump($_SESSION);
