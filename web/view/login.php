@@ -32,7 +32,7 @@ if ($_SESSION['user']['email'] == 'admin@namaste.com') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Namaste Therapy</title>
+    <title>Login | Namaste Therapy</title>
     <link rel="stylesheet" href="../css/therapy.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,8 +54,8 @@ if ($_SESSION['user']['email'] == 'admin@namaste.com') {
                 <!-- <span>*Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character</span> <br><br> -->
                 <input type="password" name="password" id="password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required><br><br>
                 <input type="submit" name="action" value="Sign In"><br><br>
-                <input type="hidden" name="action" value="Login">
-                <a class="form-link" href="/web/controller/accounts.php?action=register" title="login or register" id="account-new">Not a member yet?</a>
+                <!-- <input type="hidden" name="action" value="Login"> -->
+                <!-- <a class="form-link" href="/web/controller/accounts.php?action=register" title="login or register" id="account-new">Not a member yet?</a> -->
             </form>
 
 
