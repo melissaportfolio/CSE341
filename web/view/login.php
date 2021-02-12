@@ -23,10 +23,10 @@ echo 'If one';
  }
 }
 
-if ($_SESSION['user']['email'] == 'admin@namaste.com') {
-    header('location: admin.php');
-    exit;
-   }
+// if ($_SESSION['user']['email'] == 'admin@namaste.com') {
+//     header('location: admin.php');
+//     exit;
+//    }
 
 ?><!DOCTYPE html>
 <html lang="en">
