@@ -4,40 +4,7 @@ include '../model/account-model.php';
 
 $db = get_db();
 $customer_id = $_POST['customer_id_update'];
-// echo 'Hello' . $customer_id;
-// $customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
-// echo 'this is the customer id = ' . $customer_id;
-
-// $where1 = "DELETE FROM journal WHERE customer_id = :customer_id";
-// $stmt = $db->prepare($where1);
-// $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
-// $stmt->execute();
-
-// echo 'Hello' . $customer_id;
-// $customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
-
-// echo 'this is the customer id = ' . $customer_id;
-
-// $where1 = "DELETE FROM journal WHERE customer_id = :customer_id";
-// $stmt = $db->prepare($where1);
-// $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
-// $stmt->execute();
-
-
-// $where2 = "DELETE FROM customer WHERE customer_id = :customer_id";
-// $stmt = $db->prepare($where2);
-// $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
-// $stmt->execute();
-
-// if(isset($_POST['customer_id_update']))   {
-//     //echo $_POST['search'];
-//     $update = $_POST['update'];
-//     $where4 = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer WHERE first_name = :customer_id_update OR last_name = :customer_id_update";
-//     $stmt = $db->prepare($where4);
-//     $stmt->bindValue(':customer_id_update', $update, PDO::PARAM_STR);
-//     $stmt->execute();
-// } 
 
 $where3 = "UPDATE customer SET first_name = :first_name, last_name = :last_name, email = :email WHERE customer_id = :customer_id";
 $stmt = $db->prepare($where3);
