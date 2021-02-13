@@ -1,7 +1,7 @@
 <?php
 include '../library/dbConnect.php';
 include '../model/account-model.php';
-include '../view/admin-patient-details.php';
+
 $db = get_db();
 $customer_id = $_POST['customer_id'];
 echo 'Hello' . $customer_id;
