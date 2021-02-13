@@ -61,10 +61,12 @@ foreach ($db->query($where) as $row)
     <input type="text" name="updateFirst"><br>
     <label for="updateLast">Update Last Name</label><br>
     <input type="text" name="updateLast"><br>
+    <label for="updateEmail">Update Email</label><br>
+    <input type="text" name="updateEmail"><br>
 <input type="submit" class="regbtn" name="submit" value="Update Patient">
 
-<input type="hidden" name="customer_id1" value="1">
-<input type="hidden" name="customer_id" value="<?php if (isset($customerID)) {
+<!-- <input type="hidden" name="customer_id1" value="1"> -->
+<input type="hidden" name="customer_id_update" value="<?php if (isset($customerID)) {
                                                 echo $customerID;
                                             } ?>">
 </form>
