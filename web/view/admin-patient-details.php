@@ -57,7 +57,7 @@ foreach ($db->query($where) as $row)
 
 <form method="post" action="">
 
-<label for="first_name">Vehicle Make</label><br>
+<label for="first_name">First Name</label><br>
 <input type="text" readonly name="first_name" id="first_name" <?php
                                                         if (isset($customer_id['first_name'])) {
                                                             echo "value='$customer_id[first_name]'";
