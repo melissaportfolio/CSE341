@@ -1,18 +1,19 @@
 <?php
 include '../library/dbConnect.php';
 include '../model/account-model.php';
+include '../view/admin-patient-details.php';
 $db = get_db();
 $customer_id = $_POST['customer_id'];
 echo 'Hello' . $customer_id;
 $customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
-$where1 = "DELETE FROM journal WHERE customer_id = $customer_id";
+$where1 = "DELETE FROM journal WHERE customer_id = :customer_id";
 $stmt = $db->prepare($where1);
 $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
 $stmt->execute();
 
 
-$where2 = "DELETE FROM customer WHERE customer_id = $customer_id";
+$where2 = "DELETE FROM customer WHERE customer_id = :customer_id";
 $stmt = $db->prepare($where2);
 $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
 $stmt->execute();
