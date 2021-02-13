@@ -8,12 +8,13 @@ $customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
 $where = "DELETE FROM journal WHERE customer_id = :customer_id";
 $stmt = $db->prepare($where);
-$stmt->bindValue(':customer_id', $customer_id);
+$stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
 $stmt->execute();
+
 
 $where = "DELETE FROM customer WHERE customer_id = :customer_id";
 $stmt = $db->prepare($where);
-$stmt->bindValue(':customer_id', $customer_id);
+$stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
 $stmt->execute();
 
 echo $where . 'this is the where';
