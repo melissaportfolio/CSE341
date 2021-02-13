@@ -6,9 +6,12 @@ $customer_id = $_POST['customer_id'];
 echo 'Hello' . $customer_id;
 $id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
-     $where = "DELETE FROM customer WHERE customer_id = ". $id;
+     $where = "DELETE FROM customer WHERE customer_id = :id";
      $stmt = $db->prepare($where);
+     $stmt->bindValue(':id', $id);
      $stmt->execute();
+
+echo $where . 'hello2';
 
 ?><!DOCTYPE html>
 <html lang="en">
