@@ -5,7 +5,7 @@ include '../model/account-model.php';
 $db = get_db();
 $customer_id = $_POST['customer_id'];
 echo 'Hello' . $customer_id;
-$customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
+// $customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
 echo 'this is the customer id = ' . $customer_id;
 
