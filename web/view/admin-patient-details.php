@@ -59,7 +59,7 @@ foreach ($db->query($where) as $row)
 <form method="post" action="admin-patient-delete.php">
 
 <?php if (isset($patient['first_name'])) {
- echo "value='$customer_id[first_name]'"; } ?>><br><br>
+ echo "value='$customer_id[first_name]'"; } ?><br><br>
 
 
 
