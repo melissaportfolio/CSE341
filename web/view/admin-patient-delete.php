@@ -4,10 +4,10 @@ include '../model/account-model.php';
 
 $db = get_db();
 $customer_id = $_POST['customer_id'];
-echo 'Hello' . $customer_id;
+// echo 'Hello' . $customer_id;
 // $customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
-echo 'this is the customer id = ' . $customer_id;
+// echo 'this is the customer id = ' . $customer_id;
 
 $where1 = "DELETE FROM journal WHERE customer_id = :customer_id";
 $stmt = $db->prepare($where1);
@@ -20,8 +20,8 @@ $stmt = $db->prepare($where2);
 $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
 $stmt->execute();
 
-echo $where1 . 'this is the where 1';
-echo $where2 . 'this is where 2';
+// echo $where1 . 'this is the where 1';
+// echo $where2 . 'this is where 2';
 
 
 ?>
