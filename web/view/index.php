@@ -14,6 +14,9 @@
 </head>
 
 <body>
+        <header>
+            <?php require  '../partials/therapy-header.php'; ?>
+        </header>
     <h1>Namaste Therapy</h1>
     <nav id="nav">
         <?php require  '../partials/therapy-nav.php'; ?>

@@ -115,6 +115,15 @@ a:hover {
     padding: 20px;
 }
 
+#home-link-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    float:right;
+    color: black;
+    padding: 20px;
+}
+
 .quote1, .quote2, .quote3, .quote4, .quote5, .quote6, .quote7 {
     display: none;
 }

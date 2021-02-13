@@ -28,7 +28,7 @@ switch ($action) {
   case 'Login':
     $clientEmail = filter_input(INPUT_POST, 'clientEmail', FILTER_SANITIZE_EMAIL);
     $clientPassword = filter_input(INPUT_POST, 'clientPassword', FILTER_SANITIZE_STRING);
-    $clientEmail = checkEmail($clientEmail);
+    // $clientEmail = checkEmail($clientEmail);
     // $checkPassword = checkPassword($clientPassword);
     if (empty($clientEmail) || empty($clientPassword)) {
       $message = '<p>Please provide information for all empty form fields.</p>';
@@ -40,7 +40,7 @@ switch ($action) {
 
     // A valid password exists, proceed with the login process
     // Query the client data based on the email address
-    $clientData = getClient($clientEmail);
+    // $clientData = getClient($clientEmail);
     // var_dump($clientData);
     // exit;
 
@@ -81,8 +81,8 @@ switch ($action) {
     $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-    $email = checkEmail($email);
-    $checkPassword = checkPassword($password);
+    // $email = checkEmail($email);
+    // $checkPassword = checkPassword($password);
 
     //Check for existing email address
     $existingEmail = checkExistingEmail($email);
@@ -104,7 +104,7 @@ switch ($action) {
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Send the data to the model
-    $regOutcome = regClient($first_name, $last_name, $email, $hashedPassword);
+    // $regOutcome = regClient($first_name, $last_name, $email, $hashedPassword);
 
     // Check and report the result
     if ($regOutcome === 1) {
@@ -146,7 +146,7 @@ switch ($action) {
     require_once 'models/team6.php';
     $toPrint = '';
 
-    $topics = getTopics();
+    // $topics = getTopics();
 
     if(isset($_POST['book'])) {
       $book = filter_input(INPUT_POST, 'book', FILTER_SANITIZE_STRING);
@@ -159,7 +159,7 @@ switch ($action) {
       $userCheckbox = filter_input(INPUT_POST, 'UserCheckbox', FILTER_SANITIZE_NUMBER_INT);
       $userText = filter_input(INPUT_POST, 'UserText', FILTER_SANITIZE_STRING);
 
-      team6($book, $chapter, $verse, $content, $faith, $sacrifice, $charity, $userCheckbox, $userText);
+    //   team6($book, $chapter, $verse, $content, $faith, $sacrifice, $charity, $userCheckbox, $userText);
   
     }
 
