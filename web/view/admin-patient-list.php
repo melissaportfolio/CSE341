@@ -1,5 +1,6 @@
 <?php 
 include '../library/dbConnect.php';
+include '../model/account-model.php';
 $db = get_db();
 
 if(isset($_POST['search']))   {
@@ -16,6 +17,8 @@ else    {
     $stmt = $db->prepare($patientInfo);
     $stmt->execute();
 }
+
+
 
 // foreach ($db->query($where) as $row)
 // {

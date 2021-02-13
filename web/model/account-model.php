@@ -42,4 +42,15 @@ function registerUser($customer_id, $first_name, $last_name, $street, $city, $st
         // exit;
        }
    }
+
+   function deleteCustomer($customer_id) {
+    $db = get_db();
+    $sql = 'DELETE FROM customer WHERE customer_id = :customer_id';
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
+    $stmt->execute();
+    $rowsChanged = $stmt->rowCount();
+    $stmt->closeCursor();
+    return $rowsChanged;
+  }
 ?>
