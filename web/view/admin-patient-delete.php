@@ -3,7 +3,7 @@ include '../library/dbConnect.php';
 include '../model/account-model.php';
 $db = get_db();
 $customer_id = $_POST['customer_id'];
-
+echo $customer_id;
 $id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
      $where = "DELETE FROM customer WHERE customer_id = '". $id ."'";
