@@ -6,18 +6,19 @@ $customer_id = $_POST['customer_id'];
 echo 'Hello' . $customer_id;
 $customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
-$where = "DELETE FROM journal WHERE customer_id = :customer_id";
-$stmt = $db->prepare($where);
+$where1 = "DELETE FROM journal WHERE customer_id = :customer_id";
+$stmt = $db->prepare($where1);
 $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
 $stmt->execute();
 
 
-$where = "DELETE FROM customer WHERE customer_id = :customer_id";
-$stmt = $db->prepare($where);
+$where2 = "DELETE FROM customer WHERE customer_id = :customer_id";
+$stmt = $db->prepare($where2);
 $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
 $stmt->execute();
 
-echo $where . 'this is the where';
+echo $where1 . 'this is the where 1';
+echo $where2 . 'this is where 2';
 echo $customer_id . 'this is the customer id';
 
 ?>
