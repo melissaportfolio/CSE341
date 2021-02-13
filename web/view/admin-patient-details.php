@@ -58,9 +58,9 @@ foreach ($db->query($where) as $row)
 
 <form method="post" action="admin-patient-update.php">
 <label for="updateFirst">Update First Name</label><br>
-    <input type="text" name="updateFirst">
+    <input type="text" name="updateFirst"><br>
     <label for="updateLast">Update Last Name</label><br>
-    <input type="text" name="updateLast">
+    <input type="text" name="updateLast"><br>
 <input type="submit" class="regbtn" name="submit" value="Update Patient">
 
 <input type="hidden" name="customer_id1" value="1">
