@@ -4,20 +4,20 @@ include '../model/account-model.php';
 $db = get_db();
 $customer_id = $_POST['customer_id'];
 echo 'Hello' . $customer_id;
-$id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
+$customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
-$where = "DELETE FROM journal WHERE customer_id = :id";
+$where = "DELETE FROM journal WHERE customer_id = :customer_id";
 $stmt = $db->prepare($where);
-$stmt->bindValue(':id', $id);
+$stmt->bindValue(':customer_id', $customer_id);
 $stmt->execute();
 
-$where = "DELETE FROM customer WHERE customer_id = :id";
+$where = "DELETE FROM customer WHERE customer_id = :customer_id";
 $stmt = $db->prepare($where);
-$stmt->bindValue(':id', $id);
+$stmt->bindValue(':customer_id', $customer_id);
 $stmt->execute();
 
 echo $where . 'this is the where';
-echo $id . 'this is the id'
+
 
 ?>
 <!DOCTYPE html>
