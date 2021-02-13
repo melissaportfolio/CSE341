@@ -67,8 +67,8 @@ foreach ($db->query($where) as $row)
 
 <input type="submit" class="regbtn" name="submit" value="Delete Patient">
 
-<input type="hidden" name="action" value="deleteCustomer">
-<input type="hidden" name="customer_id" value="<?php if (isset($patient['customer_id'])) {
+<input type="hidden" name="customer_id" value="1">
+<input type="hidden" name="customer_id1" value="<?php if (isset($patient['customer_id'])) {
                                                 echo $patient['customer_id'];
                                             } ?>">
 
