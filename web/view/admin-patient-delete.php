@@ -18,7 +18,7 @@ $stmt->bindValue(':customer_id', $customer_id, PDO::PARAM_INT);
 $stmt->execute();
 
 echo $where . 'this is the where';
-echo $customer_id . 'this is the customer id'
+echo $customer_id . 'this is the customer id';
 
 ?>
 <!DOCTYPE html>
@@ -42,8 +42,8 @@ echo $customer_id . 'this is the customer id'
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
     <br><br><br>
-    <h2>Patient Details</h2>
-    <?=$patient?>
+    <h2>Patient Deleted</h2>
+    <!-- <?=$patient?> -->
 
     <h3> Patient deleted successfully</h3>
 
