@@ -29,7 +29,7 @@ $id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
 <h3> Patient deleted successfully</h3>
 
-<form method="post" action="admin-patient-details.php">
+<form method="post" action="admin-patient-list.php">
 
 
 
