@@ -56,6 +56,19 @@ foreach ($db->query($where) as $row)
 <h2>Patient Details</h2>
 <?=$patient?>
 
+<form method="post" action="admin-patient-update.php">
+<label for="updateFirst">Update First Name</label><br>
+    <input type="text" name="updateFirst">
+    <label for="updateLast">Update Last Name</label><br>
+    <input type="text" name="updateLast">
+<input type="submit" class="regbtn" name="submit" value="Update Patient">
+
+<input type="hidden" name="customer_id1" value="1">
+<input type="hidden" name="customer_id" value="<?php if (isset($customerID)) {
+                                                echo $customerID;
+                                            } ?>">
+</form>
+
 <form method="post" action="admin-patient-delete.php">
 
 <!-- <?php if (isset($patient['first_name'])) {
@@ -71,8 +84,6 @@ echo $customerID;?> -->
 <input type="hidden" name="customer_id" value="<?php if (isset($customerID)) {
                                                 echo $customerID;
                                             } ?>">
-
-
 </form>
 
     <footer>
