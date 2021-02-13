@@ -34,8 +34,8 @@ catch (PDOException $ex)
 foreach ($db->query($where) as $row)
 {
     //var_dump($row);
-    $patient .=  $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] . ' ' . $row['state'] . ' ' . $row['zip'] . '<br>';
-
+    $patient .= $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] . ' ' . $row['state'] . ' ' . $row['zip'] . '<br>';
+    $customerID = $row['customer_id'];
 }?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,14 +62,14 @@ foreach ($db->query($where) as $row)
  echo "value='$customer_id[first_name]'"; } ?><br><br> -->
 
 <?php
-echo $patient['customer_id']?>
+echo $customerID;?>
 
 
 <input type="submit" class="regbtn" name="submit" value="Delete Patient">
 
-<input type="hidden" name="customer_id" value="1">
-<input type="hidden" name="customer_id1" value="<?php if (isset($patient['customer_id'])) {
-                                                echo $patient['customer_id'];
+<input type="hidden" name="customer_id1" value="1">
+<input type="hidden" name="customer_id" value="<?php if (isset($customerID)) {
+                                                echo $customerID;
                                             } ?>">
 
 
