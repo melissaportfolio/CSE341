@@ -31,7 +31,7 @@ $stmt->execute();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Details | Namaste Therapy</title>
+    <title>Patient Delete | Namaste Therapy</title>
     <link rel="stylesheet" href="../css/therapy.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
