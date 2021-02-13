@@ -58,11 +58,11 @@ foreach ($db->query($where) as $row)
 
 <form method="post" action="admin-patient-delete.php">
 
-<?php if (isset($patient['first_name'])) {
- echo "value='$customer_id[first_name]'"; } ?><br><br>
+<!-- <?php if (isset($patient['first_name'])) {
+ echo "value='$customer_id[first_name]'"; } ?><br><br> -->
 
-
-
+<?php
+echo $patient['customer_id']?>
 
 
 <input type="submit" class="regbtn" name="submit" value="Delete Patient">
