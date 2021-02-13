@@ -1,6 +1,7 @@
 <?php
 include '../library/dbConnect.php';
 include '../model/account-model.php';
+
 $db = get_db();
 
 
@@ -55,27 +56,20 @@ foreach ($db->query($where) as $row)
 <h2>Patient Details</h2>
 <?=$patient?>
 
-<form method="post" action="">
+<form method="post" action="admin-patient-delete.php">
 
-<label for="first_name">First Name</label><br>
-<input type="text" readonly name="first_name" id="first_name" <?php
-                                                        if (isset($customer_id['first_name'])) {
-                                                            echo "value='$customer_id[first_name]'";
-                                                        } ?>><br><br>
+<?php if (isset($patient['first_name'])) {
+ echo "value='$customer_id[first_name]'"; } ?>><br><br>
 
-<label for="last_name">Vehicle Model</label><br>
-<input type="text" readonly name="last_name" id="last_name" <?php
-                                                            if (isset($customer_id['last_name'])) {
-                                                                echo "value='$customer_id[last_name]'";
-                                                            } ?>><br><br>
+
 
 
 
 <input type="submit" class="regbtn" name="submit" value="Delete Patient">
 
 <input type="hidden" name="action" value="deleteCustomer">
-<input type="hidden" name="invId" value="<?php if (isset($invInfo['invId'])) {
-                                                echo $invInfo['invId'];
+<input type="hidden" name="customer_id" value="<?php if (isset($patient['customer_id'])) {
+                                                echo $patient['customer_id'];
                                             } ?>">
 
 

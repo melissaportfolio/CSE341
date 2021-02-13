@@ -4,8 +4,10 @@ $db = get_db();
 if(isset($_POST['email'])){
 echo 'If one';
  $email = $_POST['email'];
- $result = $db->query("SELECT customer_id, email, password FROM customer WHERE email = '$email'");
- var_dump($result);
+ $dbQuery = $db->prepare("SELECT customer_id, email, password FROM customer WHERE email = '$email'");
+ $dbQuery->execute();
+ $result = $dbQuery->fetchAll();
+//  var_dump($result);
 
  $customer_id = $result[0]['customer_id'];
  $email = $result[0]['email'];
