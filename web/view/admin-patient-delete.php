@@ -17,7 +17,7 @@ $stmt->bindValue(':customer_id', $customer_id);
 $stmt->execute();
 
 echo $where . 'this is the where';
-
+echo $customer_id . 'this is the customer id'
 
 ?>
 <!DOCTYPE html>
