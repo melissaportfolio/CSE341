@@ -7,7 +7,7 @@ $customer_id = $_POST['customer_id'];
 echo 'Hello' . $customer_id;
 $customer_id = filter_input(INPUT_GET, 'customer_id', FILTER_VALIDATE_INT);
 
-echo $customer_id . 'this is the customer id';
+echo 'this is the customer id = ' . $customer_id;
 
 $where1 = "DELETE FROM journal WHERE customer_id = :customer_id";
 $stmt = $db->prepare($where1);
