@@ -49,19 +49,19 @@ else    {
 <!-- <label for="add">Add Patient</label><br>
     <input type="text" name="add"> -->
     <label for="first_name">First Name</label><br>
-    <input type="text" name="first_name">
+    <input type="text" name="first_name"><br>
     <label for="last_name">Last Name</label><br>
-    <input type="text" name="last_name">
+    <input type="text" name="last_name"><br>
     <label for="street">Street Address</label><br>
-    <input type="text" name="street">
+    <input type="text" name="street"><br>
     <label for="city">City</label><br>
-    <input type="text" name="city">
+    <input type="text" name="city"><br>
     <label for="state">State</label><br>
-    <input type="text" name="state">
+    <input type="text" name="state"><br>
     <label for="zip">Zip</label><br>
-    <input type="text" name="zip">
+    <input type="text" name="zip"><br>
     <label for="email">Email Address</label><br>
-    <input type="text" name="email">
+    <input type="text" name="email"><br>
     
     <button type="submit" name="add">Add to Patients</button>
 </form>
