@@ -1,6 +1,14 @@
 <?php 
 include '../library/dbConnect.php';
 include '../model/account-model.php';
+$first_name = filter_input(INPUT_POST, 'first_name', FILTER_SANITIZE_STRING);
+$last_name = filter_input(INPUT_POST, 'last_name', FILTER_SANITIZE_STRING);
+$street = filter_input(INPUT_POST, 'street', FILTER_SANITIZE_STRING);
+$city = filter_input(INPUT_POST, 'city', FILTER_SANITIZE_STRING);
+$state = filter_input(INPUT_POST, 'state', FILTER_SANITIZE_STRING);
+$zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+
 $db = get_db();
 
 if(isset($_POST['add']))   {
