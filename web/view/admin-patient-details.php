@@ -56,7 +56,7 @@ foreach ($db->query($where) as $row)
 <h2>Patient Details</h2>
 <?=$patient?>
 
-<form method="post" action="admin-patient-update.php">
+<!-- <form method="post" action="admin-patient-update.php">
 <label for="updateFirst">Update First Name</label><br>
     <input type="text" name="updateFirst"><br>
     <label for="updateLast">Update Last Name</label><br>
@@ -65,11 +65,11 @@ foreach ($db->query($where) as $row)
     <input type="text" name="updateEmail"><br>
 <input type="submit" class="regbtn" name="submit" value="Update Patient">
 
-<!-- <input type="hidden" name="customer_id1" value="1"> -->
+
 <input type="hidden" name="customer_id_update" value="<?php if (isset($customerID)) {
                                                 echo $customerID;
                                             } ?>">
-</form>
+</form> -->
 
 <form method="post" action="admin-patient-delete.php">
 
