@@ -88,6 +88,8 @@ echo $customerID;?> -->
                                             } ?>">
 </form>
 
+<a class="link" href="admin-patient-list.php">Return to Patient List</a>
+
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
     </footer>
