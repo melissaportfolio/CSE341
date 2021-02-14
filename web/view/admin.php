@@ -55,7 +55,8 @@ else    {
 
 
 
-<a class="link" href="admin-patient-list.php">View Patients</a><br><br>
+<a class="link" href="admin-patient-list.php">View Patient List</a><br><br>
+<a class="link" href="admin-add-patient.php">Add Patient</a><br><br>
 
 
 
