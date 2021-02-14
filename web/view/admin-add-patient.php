@@ -46,8 +46,8 @@ else    {
 <h2>Add Patient</h2>
 
 <form action="" method="post">
-<label for="add">Add Patient</label><br>
-    <input type="text" name="add">
+<!-- <label for="add">Add Patient</label><br>
+    <input type="text" name="add"> -->
     <label for="first_name">First Name</label><br>
     <input type="text" name="first_name">
     <label for="last_name">Last Name</label><br>
@@ -63,7 +63,7 @@ else    {
     <label for="email">Email Address</label><br>
     <input type="text" name="email">
     
-    <button type="submit" name="submitBtn">Add to Patients</button>
+    <button type="submit" name="add">Add to Patients</button>
 </form>
 
 <a class="link" href="admin-patient-list.php">Return to Patient List</a>
