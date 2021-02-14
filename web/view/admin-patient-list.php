@@ -13,7 +13,7 @@ if(isset($_POST['search']))   {
 } 
 elseif(isset($_POST['sort'])) {
     $sort = $_POST['sort'];
-    $where1 = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer ORDER BY last_name DESC";
+    $where1 = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer ORDER BY last_name ASC";
     $stmt = $db->prepare($where1);
     $stmt->bindValue(':sort', $sort, PDO::PARAM_STR);
     $stmt->execute();
@@ -70,10 +70,10 @@ else    {
     <button type="submit" name="submitBtn">Search</button>
 </form>
 <form action="" method="post">
-<label for="sort">Sort by Last Name</label><br>
-    <input type="text" name="sort">
+<!-- <label for="sort">Sort by Last Name</label><br> -->
+    <!-- <input type="text" name="sort"> -->
     
-    <button type="submit" name="submitBtn">Sort</button>
+    <button type="submit" name="submitBtn2">Sort by Last Name</button>
 </form>
         
         <?php 
