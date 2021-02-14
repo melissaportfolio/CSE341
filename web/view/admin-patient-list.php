@@ -15,7 +15,7 @@ elseif(isset($_POST['sort'])) {
     $sort = $_POST['sort'];
     $where1 = "SELECT customer_id, first_name, last_name, street, city, state, zip FROM customer ORDER BY last_name ASC";
     $stmt = $db->prepare($where1);
-    $stmt->bindValue(':sort', $sort, PDO::PARAM_STR);
+    // $stmt->bindValue(':sort', $sort, PDO::PARAM_STR);
     $stmt->execute();
 }
 
