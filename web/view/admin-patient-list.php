@@ -70,10 +70,10 @@ else    {
     <button type="submit" name="submitBtn">Search</button>
 </form>
 <form action="" method="post">
-<label for="sort"></label><br> 
-     <input type="text" readonly name="sort">
+<!-- <label for="sort"></label><br> 
+     <input type="text" readonly name="sort"> -->
     
-    <button type="submit" name="submitBtn2">Sort by Last Name</button>
+    <button type="submit" name="sort">Sort by Last Name</button>
 </form>
         
         <?php 
