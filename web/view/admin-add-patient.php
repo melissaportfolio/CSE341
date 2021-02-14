@@ -17,7 +17,7 @@ if(isset($_POST['add']))   {
     $addPatient = "INSERT INTO customer(first_name, last_name, street, city, state, zip, email)
     VALUES(:first_name, :last_name, :street, :city, :state, :zip, :email)";
     $stmt = $db->prepare($addPatient);
-    // $stmt->bindValue(':add', $add, PDO::PARAM_STR);
+    $stmt->bindValue(':add', $add, PDO::PARAM_STR);
     $stmt->bindValue(':first_name', $first_name, PDO::PARAM_STR);
     $stmt->bindValue(':last_name', $last_name, PDO::PARAM_STR);
     $stmt->bindValue(':street', $street, PDO::PARAM_STR);
