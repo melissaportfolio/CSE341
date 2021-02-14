@@ -62,6 +62,7 @@ else    {
     </nav>
     <br><br><br>
 <h2>Patient List</h2>
+<a class="link" href="admin-add-patient.php">Add Patient</a><br>
 
 <form action="" method="post">
 <label for="search">Search by First or Last Name</label><br>
