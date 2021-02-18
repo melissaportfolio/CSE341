@@ -161,3 +161,7 @@ a:hover {
     text-align: center;
     font-size: 20px;
 }
+
+input[type="text"] {
+    margin: 20px;
+}
