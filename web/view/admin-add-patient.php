@@ -53,7 +53,7 @@ else    {
     <br><br><br>
 <h2>Add Patient</h2>
 
-<form action="" method="post">
+<form class="patient-add" action="" method="post">
 <!-- <label for="add">Add Patient</label><br>
     <input type="text" name="add"> -->
     <label for="first_name">First Name</label><br>

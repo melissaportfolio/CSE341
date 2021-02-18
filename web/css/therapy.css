@@ -165,3 +165,7 @@ a:hover {
 input[type="text"] {
     margin-bottom: 20px;
 }
+
+.patient-add {
+    text-align: center;
+}
