@@ -86,7 +86,7 @@ else    {
             echo '<th>First Name</th>';
             echo '<th>Last Name</th>';
             echo '</tr>';
-            echo '<td>' . $row['first_name'] . ' ' . $row['last_name'] . '</td>';
+            echo '<tr><td>' . $row['first_name'] . ' ' . $row['last_name'] . '</td></tr>';
 
         }
         ?>
