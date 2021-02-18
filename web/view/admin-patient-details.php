@@ -34,7 +34,7 @@ catch (PDOException $ex)
 foreach ($db->query($where) as $row)
 {
     //var_dump($row);
-    $patient .= '<p>' . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . ', ' . $row['city'] . ' ' . $row['state'] . ' ' . $row['zip'] . '</p><br>';
+    $patient .= '<p class="patient-details">' . $row['first_name'] . ' '. $row['last_name'] . '<br>'. $row['street'] . '<br>' . $row['city'] . ', ' . $row['state'] . ' ' . $row['zip'] . '</p><br>';
     $customerID = $row['customer_id'];
 }?><!DOCTYPE html>
 <html lang="en">
@@ -71,7 +71,7 @@ foreach ($db->query($where) as $row)
                                             } ?>">
 </form> -->
 
-<form method="post" action="admin-patient-delete.php">
+<form class="patient-details" method="post" action="admin-patient-delete.php">
 
 <!-- <?php if (isset($patient['first_name'])) {
  echo "value='$customer_id[first_name]'"; } ?><br><br> -->
