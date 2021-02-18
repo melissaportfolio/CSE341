@@ -76,7 +76,7 @@ else    {
     
     <button type="submit" name="sort">Sort by Last Name</button>
 </form>
-        
+        <div class="patient-list">
         <?php 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 
@@ -90,7 +90,7 @@ else    {
 
         }
         ?>
-
+</div>
     <footer>
         <?php require  '../partials/therapy-footer.php'; ?>
     </footer>
