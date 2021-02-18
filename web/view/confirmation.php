@@ -25,7 +25,7 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
      <?php echo "<p>" . "Thank you " . $name . "</p>";?>
     <?php echo "<p>" . "Email: " . $email . "</p>";?>
    <?php echo "<p>" . "Address: " . $address . "</p>";?>
-   <p> Order Summary</p> <?php foreach ($_SESSION as $key => $value)
+   <p> Order Summary:</p> <?php foreach ($_SESSION as $key => $value)
 {
     $text = str_replace('_', ' ', $value);
     echo "<p>" . $text . "</p>";

@@ -22,11 +22,14 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
     <br><br><br>
 <h2>Checkout</h2>
 <form id="checkout" action="confirmation.php" method="post">
-Name: <input type="text" name="name"><br>
-Email: <input type="email" name="email"><br>
-Mailing Address: <input type="text" name="address"><br>
+<label for="name">Full Name:</label><br>
+<input type="text" name="name"><br>
+<label for="email">Email:</label><br>
+<input type="email" name="email"><br>
+<label for="address">Mailing Address:</label><br>
+<input type="text" name="address"><br>
 
-Order summary: <?php foreach ($_SESSION as $key => $value)
+Order Summary: <?php foreach ($_SESSION as $key => $value)
 {   $text = str_replace('_', ' ', $value);
     echo "<p>" . $text . "</p>" ;
    
