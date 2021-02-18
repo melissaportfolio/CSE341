@@ -2,7 +2,7 @@
 require '../library/dbConnect.php';
 $db = get_db();
 if(isset($_POST['email'])){
-echo 'If one';
+// echo 'If one';
  $email = $_POST['email'];
  $dbQuery = $db->prepare("SELECT customer_id, email, password FROM customer WHERE email = '$email'");
  $dbQuery->execute();

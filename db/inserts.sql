@@ -61,6 +61,9 @@ ADD password VARCHAR(50);
 INSERT INTO customer(first_name, last_name, street, city, state, zip, email, password)
 VALUES('Admin', 'User', '555 Main St', 'Provo', 'UT', '84606', 'admin@namaste.com', 'Admin1234!');
 
+INSERT INTO customer(first_name, last_name, street, city, state, zip, email, password)
+VALUES('Test', 'User', '555 Main St', 'Provo', 'UT', '84606', 'test@namaste.com', 'Test1234!');
+
 DELETE FROM customer WHERE customer_id = 4;
 DELETE FROM customer WHERE customer_id = 5;
 DELETE FROM customer WHERE customer_id = 10;
@@ -71,4 +74,6 @@ VALUES ('Melanie', 'Hansen', '555 Eagle Blvd', 'Orem', 'UT', '84058'),
 ('Soraya', 'Tazmin', '913 W April Street', 'Orem', 'UT', '84058'),
 ('Braxton', 'McDougal', '8342 N 200 W', 'Lehi', 'UT', '84043'),
 ('Greyson', 'Jex', '731 Fort St', 'Orem', 'UT', '84058');
+
+
 
