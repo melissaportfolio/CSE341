@@ -80,7 +80,7 @@ else    {
         <?php 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 
-            echo "<table><tr><th>Patients</th></tr><tr><td><a class='link' href='admin-patient-details.php?customer_id=" . strval($row['customer_id']) . "&'" . "First Name: " . $row['first_name'] . "</a></tr></td></table><br>";
+            echo "<a class='link' href='admin-patient-details.php?customer_id=" . strval($row['customer_id']) . "&'" . "First Name: " . $row['first_name'] . "</a><br>";
             // echo '<table>';
             // echo '<tr>';
             // echo '<th>First Name</th>';
