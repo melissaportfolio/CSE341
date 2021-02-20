@@ -179,3 +179,10 @@ input[type="text"] {
     font-size: 25px;
     padding: 20px;
 }
+.header-div {
+    background-color: hsl(232, 35%, 22%, .3);
+    border: 10px solid #24294A;
+    border-radius: 20px 20px 20px 20px;
+    width: 85%;
+    margin: 0 auto;
+}
