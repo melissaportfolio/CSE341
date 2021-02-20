@@ -43,7 +43,7 @@ Email: <input type="email" name="email"><br>
 Mailing Address: <input type="text" name="address"><br>
 </form>
 -->
-<p>Order summary:</p> <?php foreach ($_SESSION as $key => $value)
+<p class="heading">Order summary:</p> <?php foreach ($_SESSION as $key => $value)
 {
     $text = str_replace('_', ' ', $value);
     //str_replace($value," ","_");

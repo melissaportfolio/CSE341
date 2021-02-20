@@ -35,7 +35,7 @@
 
 <a class="link" href="view-cart.php">View Cart</a><br><br>
 
-<a class="link" href="index.php">Learn more</a>
+<!-- <a class="link" href="index.php">Learn more</a> -->
 
 
     <footer>
