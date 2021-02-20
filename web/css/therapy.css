@@ -171,6 +171,11 @@ input[type="text"] {
     margin-bottom: 20px;
 }
 
+input[type="submit"] {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .patient-add {
     text-align: center;
 }
