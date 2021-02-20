@@ -17,7 +17,7 @@
         <header>
             <?php require  '../partials/therapy-header.php'; ?>
         </header>
-        <div class="header-div">
+        
     <aside class="quote1">Every journey begins with a single step</aside>
     <aside class="quote2">Keep moving forward one day at a time</aside>
     <aside class="quote3">Change doesn't happen in an instant. Gradual steps forward bring about change over time. </aside>
@@ -25,6 +25,7 @@
     <aside class="quote5">You don't have to find yourself because you aren't lost. What you need is self-acceptance.</aside>
     <aside class="quote6">Each day is a new beginning. A chance to start again on a clean slate.</aside>
     <aside class="quote7">Love, laughter, and friendship are the best forms of therapy</aside>
+    <div class="header-div">
     <h1>Namaste Therapy</h1>
     </div>
     <nav id="nav">
