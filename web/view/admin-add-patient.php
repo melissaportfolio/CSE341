@@ -73,7 +73,7 @@ else    {
     <label for="email">Email Address</label><br>
     <input type="text" name="email"><br>
     
-    <button type="submit" name="add">Add to Patients</button>
+    <button type="submit" name="add">Add to Patient List</button>
 </form>
 
 <a class="link" href="admin-patient-list.php">Return to Patient List</a>
