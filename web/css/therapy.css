@@ -27,7 +27,7 @@ h2 {
 }
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     padding: 20px;
 }
 footer p {
@@ -39,12 +39,12 @@ footer p {
 form {
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 button {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     color: black;
     background-color: azure;
     border-radius: 5px 5px 5px 5px;
@@ -57,7 +57,7 @@ nav ul {
 }
 nav ul li a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
 }
@@ -68,14 +68,14 @@ nav ul li a:hover {
 
 .link {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     /* text-decoration: none; */
     color: black;
     padding: 20px;
 }
 .link-button {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     color: black;
     text-decoration: none;
     background-color: aquamarine;
@@ -114,7 +114,7 @@ a:hover {
 }
 #home-link {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     color: black;
     padding: 20px;
@@ -122,7 +122,7 @@ a:hover {
 
 #home-link-2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     float:right;
     color: white;
