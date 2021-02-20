@@ -17,7 +17,7 @@
         <header>
             <?php require  '../partials/therapy-header.php'; ?>
         </header>
-        <aside class="quote1">Every journey begins with a single step</aside>
+    <aside class="quote1">Every journey begins with a single step</aside>
     <aside class="quote2">Keep moving forward one day at a time</aside>
     <aside class="quote3">Change doesn't happen in an instant. Gradual steps forward bring about change over time. </aside>
     <aside class="quote4">Faith in yourself makes all the difference</aside>
