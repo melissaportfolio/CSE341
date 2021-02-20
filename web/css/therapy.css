@@ -78,8 +78,12 @@ nav ul li a:hover {
     color: black;
     text-decoration: none;
     background-color: aquamarine;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 15px 15px 15px 15px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
     padding: 20px;
+    margin-left: 20px;
 }
 .link-button:hover {
     cursor: pointer;
