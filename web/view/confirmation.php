@@ -15,7 +15,9 @@ $address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
 <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Montserrat+Alternates&family=Nunito&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Namaste Therapy</h1>
+<div class="header-div">
+    <h1>Namaste Therapy</h1>
+    </div>
 <nav id="nav">
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>

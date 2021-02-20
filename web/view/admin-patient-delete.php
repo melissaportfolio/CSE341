@@ -41,7 +41,9 @@ $stmt->execute();
 </head>
 
 <body>
+<div class="header-div">
     <h1>Namaste Therapy</h1>
+    </div>
     <nav id="nav">
         <?php require  '../partials/therapy-nav.php'; ?>
     </nav>
