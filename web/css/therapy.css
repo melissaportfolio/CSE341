@@ -172,6 +172,11 @@ input[type="text"] {
     height: 25px;
 }
 
+input[type="email"] {
+    margin-bottom: 20px;
+    height: 25px;
+}
+
 input[type="submit"] {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
