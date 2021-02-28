@@ -46,12 +46,26 @@ const requestListener = (req,res) => {
            
            
             res.write("<h1>Graduation is coming soon!</h1>");
-        res.write("<h2>Days left until graduation on July 28, 2021:</h2>" + daysLeftText);
+            res.write("<h2>Days left until graduation on July 28, 2021:</h2>" + daysLeftText);
+            res.end();
+            return;
+    }
+
+    else if (req.url == "/spring"){
+      
+        const start = new Date();
+        const end = new Date("04/19/2021");
+        const difference = Math.abs(end - start);
+        const daysLeft = difference / (1000 * 3600 * 24);
+        const rounded = Math.round(daysLeft);
+        const daysLeftText = rounded.toString();
+       
+       
+        res.write("<h1>Spring semester is coming soon!</h1>");
+        res.write("<h2>Days left until spring semester on April 19, 2021:</h2>" + daysLeftText);
         res.end();
         return;
-
-       
-    }
+}
 
     
 
