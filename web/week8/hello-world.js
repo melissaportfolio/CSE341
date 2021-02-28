@@ -35,7 +35,7 @@ const requestListener = (req,res) => {
         return;
     }
 
-    else if (req.url == "/getElapsed"){
+    else if (req.url == "/graduation"){
       
             const start = new Date();
             const end = new Date("07/28/2021");
